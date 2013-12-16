@@ -1,0 +1,75 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Diagnostics;
+using System.IO;
+using System.Threading;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Input.Touch;
+using DarkHavoc.Engine;
+using DarkHavoc.Engine.API;
+using DarkHavoc.Engine.Effects;
+using AssetLoader;
+
+namespace DarkHavoc
+{
+    /// <summary>
+    /// This is the screen that will be the underlay of the menu screen.
+    /// </summary>
+    class MenuBackgroundScreen : GameScreen
+    {
+        // Our starfield.
+        Starfield starfield;
+
+        public MenuBackgroundScreen()
+        {
+            // If we just started the game...
+            if (!TitleScreen.passThrough)
+            {
+                // Then make the transition to the title screen slower.
+                TransitionOnTime = TimeSpan.FromSeconds(1.25);
+            }
+            else
+            {
+                // otherwise make it go a bit faster.
+                TransitionOnTime = TimeSpan.FromSeconds(0.75);
+            }
+
+            // Make the transition from the title screen go sort of fast.
+            TransitionOffTime = TimeSpan.FromSeconds(0.75);
+        }
+
+        public override void LoadContent()
+        {
+            // Create new instance of Starfield with a handle to our ScreenManager.
+            starfield = new Starfield(ScreenManager);
+
+            // Initialize the starfield.
+            starfield.Initialize();
+        }
+
+        public override void Update(GameTime gameTime, bool otherScreenHasFocus, bool coveredByOtherScreen)
+        {
+            // Update starfield.
+            starfield.Update(gameTime);
+        }
+
+        public override void Draw(GameTime gameTime)
+        {
+            // Store our SpriteBatch in a local variable.
+            SpriteBatch spriteBatch = ScreenManager.SpriteBatch;
+
+            // Begin SpriteBatch.
+            spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.Additive);
+
+            // Draw Starfield.
+            starfield.Draw(spriteBatch, gameTime);
+
+            // End SpriteBatch.
+            spriteBatch.End();
+        }
+    }
+}

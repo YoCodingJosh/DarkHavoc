@@ -1,0 +1,54 @@
+﻿<!-- 
+CREDITS.JXD - Dark Havoc Credits
+Created by Josh Kennedy on 15 July 2013
+
+Dark Havoc
+Copyright 2011-2013 Joshua Kennedy.
+-->
+
+<JoshoCredits ShowLogo="True">
+  <Title Text="Dark Havoc" />
+  <Subtitle Text="A Joshua Kennedy Production" />
+
+  <MajorTask Title="Programming">
+    <Task Title="Engine Programming" Name="Joshua Kennedy" />
+    <Task Title="Gameplay Programming" Name="Joshua Kennedy" />
+    <Task Title="Platform Programming" Name="Joshua Kennedy" />
+    <Task Title="Gameplay Scripting" Name="Joshua Kennedy" />
+    <Task Title="Subsystem Programming" Name="Joshua Kennedy" />
+    <Task Title="Strategic Strategizing" Name="Joshua Kennedy" />
+  </MajorTask>
+
+  <MajorTask Title="Design">
+    <Task Title="Game Concept" Name="Joshua Kennedy" />
+    <Task Title="Level Design" Name="Joshua Kennedy" />
+    <Task Title="Game Design" Name="Joshua Kennedy" />
+    <Task Title="Philosophical Thinking" Name="Joshua Kennedy" />
+  </MajorTask>
+
+  <MajorTask Title="Management">
+    <Task Title="Producer" Name="Joshua Kennedy" />
+    <Task Title="Director" Name="Joshua Kennedy" />
+    <Task Title="Project Manager" Name="Joshua Kennedy" />
+    <Task Title="Big Enchilada" Name="Joshua Kennedy" />
+  </MajorTask>
+
+  <MajorTask Title="Music">
+    <Task Title="Credits Music" Name="One by betrayer" />
+    <Task Title="Main Menu Music" Name="Kool-GroOve" />
+  </MajorTask>
+
+  <MajorTask Title="3rd Party Libraries">
+    <Task Title="MonoGame" Name="http://www.monogame.net/" />
+  </MajorTask>
+
+  <SpecialThanks>
+    <Thanks>Sony Computer Entertainment America</Thanks>
+    <Thanks>Steve Groll</Thanks>
+    <Thanks>Xamarin</Thanks>
+    <Thanks>MonoGame Developers</Thanks>
+    <Thanks>Russ Hanna</Thanks>
+    <Thanks>My Family</Thanks>
+    <Thanks>You, the player!</Thanks>
+  </SpecialThanks>
+</JoshoCredits>
