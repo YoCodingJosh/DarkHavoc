@@ -1,3 +1,5 @@
+![alt text](http://phobos.joshuakennedy.net/static/NewDarkHavocLogo.png "Dark Havoc Logo v2")
+
 Dark Havoc
 =========
 
