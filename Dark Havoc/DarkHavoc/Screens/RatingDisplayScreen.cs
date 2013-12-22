@@ -39,6 +39,8 @@ namespace DarkHavoc
             //ratingPosition = new Vector2(ratingCenterPosition.X - (ratingLogoTexture.Width / 2) - 30, ratingCenterPosition.Y);
 
             //headingPosition = new Vector2(ratingCenterPosition.X + 150, ratingCenterPosition.Y + (ratingLogoTexture.Height / 4));
+
+			base.LoadContent();
         }
 
         public override void Update(GameTime gameTime, bool otherScreenHasFocus, bool coveredByOtherScreen)

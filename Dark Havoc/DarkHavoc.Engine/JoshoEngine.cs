@@ -32,6 +32,8 @@ namespace DarkHavoc.Engine
                 // Create the screen manager component.
                 myScreenManager = new ScreenManager(game);
 
+				myScreenManager.Initialize ();
+
                 // Add the screen manager to the component stack.
                 game.Components.Add(myScreenManager);
 

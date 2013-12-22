@@ -84,6 +84,8 @@ namespace DarkHavoc.Engine
         {
             shownAlready = false;
             versionInfoContainer = 0.0f;
+
+			this.Enabled = true;
         }
 
         /// <summary>
@@ -110,7 +112,7 @@ namespace DarkHavoc.Engine
             //    Environment.Exit(-1);
             //}
 
-            spriteBatch = new SpriteBatch(GraphicsDevice);
+			spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // Tell each of the screens to load their content.
             foreach (GameScreen screen in screens)

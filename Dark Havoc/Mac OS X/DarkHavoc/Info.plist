@@ -18,5 +18,7 @@
 	<string>© 2011-2013 Joshua Kennedy</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>CFBundleName</key>
+	<string>Dark Havoc</string>
 </dict>
 </plist>

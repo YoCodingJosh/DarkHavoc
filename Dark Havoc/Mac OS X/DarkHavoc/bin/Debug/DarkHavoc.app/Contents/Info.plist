@@ -18,6 +18,8 @@
 	<string>© 2011-2013 Joshua Kennedy</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>CFBundleName</key>
+	<string>Dark Havoc</string>
 	<key>BuildMachineOSBuild</key>
 	<string>13B42</string>
 	<key>CFBundleDevelopmentRegion</key>
@@ -28,8 +30,6 @@
 	<string>DarkHavoc</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
-	<key>CFBundleName</key>
-	<string>DarkHavoc</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleSignature</key>
