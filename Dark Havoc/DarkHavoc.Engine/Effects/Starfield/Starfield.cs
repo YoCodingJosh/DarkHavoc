@@ -70,7 +70,7 @@ namespace DarkHavoc.Engine.Effects
                 star.Color = GenerateStarColor();
 
                 // Random Position
-                star.Position = new Vector2(rand.NextInt(screenManager.Game.Window.ClientBounds.Width), rand.NextInt(screenManager.Game.Window.ClientBounds.Height));
+				star.Position = new Vector2(rand.NextInt(screenManager.Game.Window.ClientBounds.Width), rand.NextInt(screenManager.Game.Window.ClientBounds.Height));
                 star.Speed = (float)rand.NextDouble() * 5 + 2;
                 stars[i] = star;
             }

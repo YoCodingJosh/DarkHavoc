@@ -6,7 +6,7 @@ namespace DarkHavoc.Engine.API
 {
     public static class MonoGameExtensions
     {
-#if PC
+#if !MONOMAC
         public static void SetPosition(this GameWindow window, Point position)
         {
             OpenTK.GameWindow OTKWindow = GetForm(window);

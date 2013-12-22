@@ -91,9 +91,9 @@ namespace DarkHavoc.Engine
         /// </summary>
         public override void Initialize()
         {
-            base.Initialize();
+			isInitialized = true;
 
-            isInitialized = true;
+            base.Initialize();
         }
 
         /// <summary>

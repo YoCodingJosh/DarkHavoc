@@ -104,7 +104,11 @@ namespace DarkHavoc
             Window.Title = "Dark Havoc";
 
             // Set the content root directory to the Resources folder.
+#if WINDOWS
             Content.RootDirectory = "Resources";
+#elif MONOMAC
+			Content.RootDirectory = "Content";
+#endif
 
             // Create new instance of GraphicsDeviceManager with the pointer to this game class.
             graphics = new GraphicsDeviceManager(this);
@@ -118,7 +122,18 @@ namespace DarkHavoc
             windowCreationBackgroundWorker.DoWork += new DoWorkEventHandler(windowCreationBackgroundWorker_DoWork);
             windowCreationBackgroundWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(windowCreationBackgroundWorker_RunWorkerCompleted);
 #endif
+
+#if !WINDOWS
+			//LoadContent();
+#endif
         }
+
+#if !WINDOWS
+		protected override void Initialize ()
+		{
+			base.Initialize();
+		}
+#endif
 
         protected override void LoadContent()
         {
@@ -153,7 +168,7 @@ namespace DarkHavoc
             Debug.WriteLine("[Dark Havoc] MonoGame WinGL is slow starting up... :(");
             windowCreationBackgroundWorker.RunWorkerAsync();
 #else
-            JoshoEngine.CreateEngine(this, new RatingDisplayScreen());
+			JoshoEngine.CreateEngine(this, new RatingDisplayScreen());
 #endif
         }
 

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{36D104FA-7253-4A1E-8E9D-20F591152516}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DarkHavoc.Engine</RootNamespace>
+    <AssemblyName>DarkHavoc.Engine</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;MONOMAC;PC</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Lidgren.Network">
+      <HintPath>..\..\..\Dependencies\Binaries\Mac OS X\Lidgren.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>..\..\..\Dependencies\Binaries\Mac OS X\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Tao.Sdl">
+      <HintPath>..\..\..\Dependencies\Binaries\Mac OS X\Tao.Sdl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="MonoMac">
+      <HintPath>..\..\..\Dependencies\Binaries\Mac OS X\MonoMac.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\DarkHavoc.Engine\Animation\SpriteStrip.cs">
+      <Link>Animation\SpriteStrip.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc.Engine\API\ColorUtil.cs">
+      <Link>API\ColorUtil.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc.Engine\API\CountdownTimer.cs">
+      <Link>API\CountdownTimer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc.Engine\API\Hash.cs">
+      <Link>API\Hash.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc.Engine\API\Helper.cs">
+      <Link>API\Helper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc.Engine\API\MonoGameExtensions.cs">
+      <Link>API\MonoGameExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc.Engine\API\RectangleExtensions.cs">
+      <Link>API\RectangleExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc.Engine\API\ShadowedString.cs">
+      <Link>API\ShadowedString.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc.Engine\API\Vector2DExtensions.cs">
+      <Link>API\Vector2DExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc.Engine\API\VersionAPI.cs">
+      <Link>API\VersionAPI.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc.Engine\GameScreen.cs">
+      <Link>GameScreen.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc.Engine\InputState.cs">
+      <Link>InputState.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc.Engine\JoshoEngine.cs">
+      <Link>JoshoEngine.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc.Engine\JoshoEntity.cs">
+      <Link>JoshoEntity.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc.Engine\JoshoRandom.cs">
+      <Link>JoshoRandom.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc.Engine\PlayerIndexEventArgs.cs">
+      <Link>PlayerIndexEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc.Engine\ScreenManager.cs">
+      <Link>ScreenManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc.Engine\DataReaders\Credits.cs">
+      <Link>DataReaders\Credits.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc.Engine\DataReaders\IniFile.cs">
+      <Link>DataReaders\IniFile.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc.Engine\DataReaders\SpriteStripMetadata.cs">
+      <Link>DataReaders\SpriteStripMetadata.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc.Engine\Effects\Lightning\BranchLightning.cs">
+      <Link>Effects\Lightning\BranchLightning.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc.Engine\Effects\Lightning\ILightning.cs">
+      <Link>Effects\Lightning\ILightning.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc.Engine\Effects\Lightning\LightningBolt.cs">
+      <Link>Effects\Lightning\LightningBolt.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc.Engine\Effects\Lightning\LightningText.cs">
+      <Link>Effects\Lightning\LightningText.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc.Engine\Effects\Starfield\Star.cs">
+      <Link>Effects\Starfield\Star.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc.Engine\Effects\Starfield\Starfield.cs">
+      <Link>Effects\Starfield\Starfield.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc.Engine\Menu\MenuButton.cs">
+      <Link>Menu\MenuButton.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc.Engine\Menu\MenuEntry.cs">
+      <Link>Menu\MenuEntry.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc.Engine\Menu\MenuScreen.cs">
+      <Link>Menu\MenuScreen.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc.Engine\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc.Engine\Screens\CreditsScreen.cs">
+      <Link>Screens\CreditsScreen.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Animation\" />
+    <Folder Include="API\" />
+    <Folder Include="DataReaders\" />
+    <Folder Include="Effects\" />
+    <Folder Include="Menu\" />
+    <Folder Include="Properties\" />
+    <Folder Include="Screens\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AssetLoader\AssetLoader.csproj">
+      <Project>{E09AFBB6-065A-4C7A-814C-F45271928E6E}</Project>
+      <Name>AssetLoader</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

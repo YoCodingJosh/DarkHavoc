@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F0E801FF-F672-4F61-8CB8-39A0E6FDDFF6}</ProjectGuid>
+    <ProjectTypeGuids>{948B3504-5B70-4649-8FE4-BDE1FB46EC69};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DarkHavoc</RootNamespace>
+    <MonoMacResourcePrefix>Resources</MonoMacResourcePrefix>
+    <AssemblyName>DarkHavoc</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;MONOMAC;PC</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <UseSGen>false</UseSGen>
+    <IncludeMonoRuntime>false</IncludeMonoRuntime>
+    <EnablePackageSigning>false</EnablePackageSigning>
+    <CodeSigningKey>Mac Developer</CodeSigningKey>
+    <EnableCodeSigning>false</EnableCodeSigning>
+    <CreatePackage>false</CreatePackage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <LinkMode>Full</LinkMode>
+    <UseSGen>false</UseSGen>
+    <IncludeMonoRuntime>true</IncludeMonoRuntime>
+    <EnablePackageSigning>false</EnablePackageSigning>
+    <CodeSigningKey>Developer ID Application</CodeSigningKey>
+    <EnableCodeSigning>true</EnableCodeSigning>
+    <CreatePackage>true</CreatePackage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <LinkMode>Full</LinkMode>
+    <UseSGen>false</UseSGen>
+    <IncludeMonoRuntime>true</IncludeMonoRuntime>
+    <PackageSigningKey>3rd Party Mac Developer Installer</PackageSigningKey>
+    <CreatePackage>true</CreatePackage>
+    <CodeSigningKey>3rd Party Mac Developer Application</CodeSigningKey>
+    <EnableCodeSigning>true</EnableCodeSigning>
+    <EnablePackageSigning>true</EnablePackageSigning>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="Lidgren.Network">
+      <HintPath>..\..\..\Dependencies\Binaries\Mac OS X\Lidgren.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>..\..\..\Dependencies\Binaries\Mac OS X\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Tao.Sdl">
+      <HintPath>..\..\..\Dependencies\Binaries\Mac OS X\Tao.Sdl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="MonoMac">
+      <HintPath>..\..\..\Dependencies\Binaries\Mac OS X\MonoMac.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Entities\" />
+    <Folder Include="Game\" />
+    <Folder Include="Properties\" />
+    <Folder Include="Screens\" />
+    <Folder Include="DataLoaders\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\DarkHavoc\Entities\HomingMissile.cs">
+      <Link>Entities\HomingMissile.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc\Entities\Player.cs">
+      <Link>Entities\Player.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc\Entities\SpriteExplosion.cs">
+      <Link>Entities\SpriteExplosion.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc\DarkHavocGame.cs">
+      <Link>DarkHavocGame.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc\GlobalConstants.cs">
+      <Link>GlobalConstants.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc\GlobalEnums.cs">
+      <Link>GlobalEnums.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc\Program.cs">
+      <Link>Program.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc\Game\ArcadeMode.cs">
+      <Link>Game\ArcadeMode.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc\Game\PracticeMode.cs">
+      <Link>Game\PracticeMode.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc\Screens\ArcadeStartScreen.cs">
+      <Link>Screens\ArcadeStartScreen.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc\Screens\AssetLoadScreen.cs">
+      <Link>Screens\AssetLoadScreen.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc\Screens\FileAccessNotificationScreen.cs">
+      <Link>Screens\FileAccessNotificationScreen.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc\Screens\LoadingScreen.cs">
+      <Link>Screens\LoadingScreen.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc\Screens\MainMenuScreen.cs">
+      <Link>Screens\MainMenuScreen.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc\Screens\MenuBackgroundScreen.cs">
+      <Link>Screens\MenuBackgroundScreen.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc\Screens\OptionsMenuScreen.cs">
+      <Link>Screens\OptionsMenuScreen.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc\Screens\PauseMenuScreen.cs">
+      <Link>Screens\PauseMenuScreen.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc\Screens\PlayGameMenuScreen.cs">
+      <Link>Screens\PlayGameMenuScreen.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc\Screens\RatingDisplayScreen.cs">
+      <Link>Screens\RatingDisplayScreen.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc\Screens\SplashScreen.cs">
+      <Link>Screens\SplashScreen.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc\Screens\StallScreen.cs">
+      <Link>Screens\StallScreen.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc\Screens\TitleScreen.cs">
+      <Link>Screens\TitleScreen.cs</Link>
+    </Compile>
+    <Compile Include="..\..\DarkHavoc\DataLoaders\Options.cs">
+      <Link>DataLoaders\Options.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AssetLoader\AssetLoader.csproj">
+      <Project>{E09AFBB6-065A-4C7A-814C-F45271928E6E}</Project>
+      <Name>AssetLoader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DarkHavoc.Engine\DarkHavoc.Engine.csproj">
+      <Project>{36D104FA-7253-4A1E-8E9D-20F591152516}</Project>
+      <Name>DarkHavoc.Engine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Info.plist" />
+    <BundleResource Include="Resources\DarkHavocIcons.icns" />
+  </ItemGroup>
+</Project>

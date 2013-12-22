@@ -11,7 +11,7 @@ namespace DarkHavoc.Engine
     {
         private static ScreenManager myScreenManager;
 
-        private static bool engineRunning;
+		private static bool engineRunning = false;
 
         public static bool IsEngineRunning
         {
