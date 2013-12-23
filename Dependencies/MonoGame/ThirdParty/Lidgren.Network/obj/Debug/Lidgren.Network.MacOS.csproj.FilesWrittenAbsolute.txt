@@ -1,0 +1,4 @@
+/Users/joshuakennedy/Documents/DarkHavoc/Dependencies/MonoGame/ThirdParty/Lidgren.Network/bin/MacOS/Debug/Lidgren.Network.dll.mdb
+/Users/joshuakennedy/Documents/DarkHavoc/Dependencies/MonoGame/ThirdParty/Lidgren.Network/bin/MacOS/Debug/Lidgren.Network.dll
+/Users/joshuakennedy/Documents/DarkHavoc/Dependencies/MonoGame/ThirdParty/Lidgren.Network/obj/Debug/Lidgren.Network.dll
+/Users/joshuakennedy/Documents/DarkHavoc/Dependencies/MonoGame/ThirdParty/Lidgren.Network/obj/Debug/Lidgren.Network.dll.mdb

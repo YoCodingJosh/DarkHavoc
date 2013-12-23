@@ -1,0 +1,2 @@
+/Users/joshuakennedy/Downloads/MonoGame-develop/ThirdParty/Lidgren.Network/bin/MacOS/Release/Lidgren.Network.dll
+/Users/joshuakennedy/Downloads/MonoGame-develop/ThirdParty/Lidgren.Network/obj/Release/Lidgren.Network.dll

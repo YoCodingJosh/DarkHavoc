@@ -30,17 +30,22 @@ namespace DarkHavoc
         {
             ContentManager content = ScreenManager.Game.Content;
 
-            ratingLogoTexture = content.Load<Texture2D>("./Images/esrb_rp");
+#if WINDOWS
+			ratingLogoTexture = content.Load<Texture2D>("./Images/esrb_rp");
+#elif MONOMAC
+			ratingLogoTexture = content.Load<Texture2D>("./Images/esrb_rp");
+#endif
             //headingFont = content.Load<SpriteFont>("./Fonts/ConsoleFont");
 
             //headingText = "THIS GAME" + Environment.NewLine + "HAS NOT YET BEEN RATED!";
             
-            ratingCenterPosition = Helper.CenterOnScreen(ScreenManager, ratingLogoTexture);
+			ratingCenterPosition = Helper.CenterOnScreen(ScreenManager, ratingLogoTexture);
+
             //ratingPosition = new Vector2(ratingCenterPosition.X - (ratingLogoTexture.Width / 2) - 30, ratingCenterPosition.Y);
 
             //headingPosition = new Vector2(ratingCenterPosition.X + 150, ratingCenterPosition.Y + (ratingLogoTexture.Height / 4));
 
-			base.LoadContent();
+			//base.LoadContent();
         }
 
         public override void Update(GameTime gameTime, bool otherScreenHasFocus, bool coveredByOtherScreen)

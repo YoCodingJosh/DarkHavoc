@@ -61,7 +61,7 @@ namespace DarkHavoc
         public void ResetOptions()
         {
 #if PC
-            fullscreen = true;
+			fullscreen = false;
 #endif
             music = true;
             sound = true;

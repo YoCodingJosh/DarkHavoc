@@ -3,9 +3,12 @@ using System.Diagnostics;
 using System.IO;
 using System.Reflection;
 using System.Threading;
+using System.Windows.Forms;
 #if WINDOWS
 using System.ComponentModel;
-using System.Windows.Forms;
+#elif MONOMAC
+using MonoMac;
+using MonoMac.AppKit;
 #endif
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -63,6 +66,41 @@ namespace DarkHavoc
             Debug.WriteLine("[Dark Havoc] I'm done waiting for MonoGame... I'm starting Dark Havoc now!");
             JoshoEngine.CreateEngine(this, new RatingDisplayScreen());
         }
+#elif MONOMAC
+		private void CenterWindow()
+		{
+			int index;
+			int upperBound;
+			float fScreenWidth, fScreenHeight, fNewX, fNewY, fWindowWidth, fWindowHeight, fTitleBarHeight;
+			Screen[] screens = Screen.AllScreens;
+
+			fScreenWidth = fScreenHeight = 0;
+
+			upperBound = screens.GetUpperBound(0);
+			for (index = 0; index <= upperBound; index++)
+			{
+				if (screens[index].Primary)
+				{
+					fScreenWidth = (float)screens[index].Bounds.Width;
+					fScreenHeight = (float)screens[index].Bounds.Height;
+					index = upperBound;
+				}
+			}
+
+			fWindowWidth = graphics.PreferredBackBufferWidth;
+			fWindowHeight = graphics.PreferredBackBufferHeight;
+
+			fNewX = (fScreenWidth - fWindowWidth) / 2;
+			fNewY = (fScreenHeight - fWindowHeight) / 2;
+
+			fTitleBarHeight = this.Window.Window.Frame.Height - fWindowHeight;
+
+			System.Drawing.PointF pfLocation = new System.Drawing.PointF(fNewX,fNewY);
+			System.Drawing.PointF pfSize = new System.Drawing.PointF(fWindowWidth, fWindowHeight + fTitleBarHeight);
+			System.Drawing.SizeF sfSize = new System.Drawing.SizeF(pfSize);
+			System.Drawing.RectangleF rectTemp = new System.Drawing.RectangleF(pfLocation, sfSize);
+			this.Window.Window.SetFrame(rectTemp, true);
+		}
 #endif
 
 #if PC
@@ -86,6 +124,10 @@ namespace DarkHavoc
         /// </summary>
         public DarkHavocGame()
         {
+#if MONOMAC
+			// Set the Window Background Color to Black, since it defaults to gray.
+			Window.Window.BackgroundColor = NSColor.Black;
+#endif
             // Create new Options in case it has been deleted or we're starting for the first time.
             GameOptions = new Options();
 
@@ -122,10 +164,6 @@ namespace DarkHavoc
             windowCreationBackgroundWorker.DoWork += new DoWorkEventHandler(windowCreationBackgroundWorker_DoWork);
             windowCreationBackgroundWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(windowCreationBackgroundWorker_RunWorkerCompleted);
 #endif
-
-#if !WINDOWS
-			//LoadContent();
-#endif
         }
 
 #if !WINDOWS
@@ -150,6 +188,8 @@ namespace DarkHavoc
             // Enable multi-sampled back buffer.
             graphics.PreferMultiSampling = true;
 
+			graphics.ApplyChanges();
+
 #if PC
             Console.WriteLine("Fullscreen is " + GameOptions.IsFullscreen);
             if (GameOptions.IsFullscreen)
@@ -157,9 +197,12 @@ namespace DarkHavoc
 #endif
 
 #if WINDOWS
-            // On Mac OS X and Linux, it gets automatically centered.
+			// On Linux, it might get automatically centered.
             // On PS4, it'll just be full screen. (duh)
             this.Window.SetPosition(GetCenterOfScreen(graphics));
+#elif MONOMAC
+			// On Mac, it doesn't automatically center.
+			CenterWindow();
 #endif
 
             // Create new engine instance of the JoshoEngine and load up the first screen.

@@ -32,7 +32,11 @@ namespace DarkHavoc
 
         public override void LoadContent()
         {
+#if !MONOMAC
             notificationAnimationMetadata = new SpriteStripMetadata("./Resources/Animations/HDDACCESSINDICATOR.ini");
+#else
+			notificationAnimationMetadata = new SpriteStripMetadata("./Content/Animations/HDDACCESSINDICATOR.ini");
+#endif
             Vector2 centerOfScreen = new Vector2(ScreenManager.GraphicsDevice.Viewport.TitleSafeArea.Center.X, ScreenManager.GraphicsDevice.Viewport.TitleSafeArea.Center.Y);
 
             ContentManager content = ScreenManager.Game.Content;

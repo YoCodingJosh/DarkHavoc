@@ -30,7 +30,7 @@ namespace DarkHavoc.Engine.API
         {
             Viewport viewport = screenManager.GraphicsDevice.Viewport;
 
-            int x = (viewport.TitleSafeArea.Width - texture.Width) / 2;
+			int x = (viewport.TitleSafeArea.Width - texture.Width) / 2;
             int y = (viewport.TitleSafeArea.Height - texture.Height) / 2;
 
             return new Vector2(x, y);

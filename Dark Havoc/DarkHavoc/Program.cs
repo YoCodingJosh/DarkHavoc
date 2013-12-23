@@ -31,7 +31,9 @@ namespace DarkHavoc
 
             // Run game.
             gameInstance.Run();
+
 #else
+
 			NSApplication.Init();
 
 			using (var p = new NSAutoreleasePool()) 
@@ -51,7 +53,7 @@ namespace DarkHavoc
     }
 
 #if MONOMAC
-	class AppDelegate : NSApplicationDelegate
+	internal class AppDelegate : NSApplicationDelegate
 	{
 		public override void FinishedLaunching(MonoMac.Foundation.NSObject notification)
 		{

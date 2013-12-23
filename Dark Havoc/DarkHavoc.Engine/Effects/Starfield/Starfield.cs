@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
@@ -70,7 +71,11 @@ namespace DarkHavoc.Engine.Effects
                 star.Color = GenerateStarColor();
 
                 // Random Position
+#if !MONOMAC
 				star.Position = new Vector2(rand.NextInt(screenManager.Game.Window.ClientBounds.Width), rand.NextInt(screenManager.Game.Window.ClientBounds.Height));
+#else
+				star.Position = new Vector2(rand.NextInt(screenManager.Game.Window.Size.Width), rand.NextInt(screenManager.Game.Window.Size.Height));
+#endif
                 star.Speed = (float)rand.NextDouble() * 5 + 2;
                 stars[i] = star;
             }
@@ -98,9 +103,9 @@ namespace DarkHavoc.Engine.Effects
             }
         }
 
-        private Color GenerateStarColor()
+		private Microsoft.Xna.Framework.Color GenerateStarColor()
         {
-            return new Color(rand.NextInt(256), rand.NextInt(256), rand.NextInt(256), 128);
+			return new Microsoft.Xna.Framework.Color(rand.NextInt(256), rand.NextInt(256), rand.NextInt(256), 128);
         }
 
         /// <summary>

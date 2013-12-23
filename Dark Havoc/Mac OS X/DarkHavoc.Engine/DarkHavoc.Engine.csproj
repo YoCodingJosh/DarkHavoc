@@ -30,12 +30,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="Lidgren.Network">
-      <HintPath>..\..\..\Dependencies\Binaries\Mac OS X\Lidgren.Network.dll</HintPath>
-    </Reference>
-    <Reference Include="MonoGame.Framework">
-      <HintPath>..\..\..\Dependencies\Binaries\Mac OS X\MonoGame.Framework.dll</HintPath>
-    </Reference>
     <Reference Include="Tao.Sdl">
       <HintPath>..\..\..\Dependencies\Binaries\Mac OS X\Tao.Sdl.dll</HintPath>
     </Reference>
@@ -44,6 +38,7 @@
     <Reference Include="MonoMac">
       <HintPath>..\..\..\Dependencies\Binaries\Mac OS X\MonoMac.dll</HintPath>
     </Reference>
+    <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\..\DarkHavoc.Engine\Animation\SpriteStrip.cs">
@@ -151,6 +146,10 @@
     <Folder Include="Screens\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Dependencies\MonoGame\MonoGame.Framework\MonoGame.Framework.MacOS.csproj">
+      <Project>{36C538E6-C32A-4A8D-A39C-566173D7118E}</Project>
+      <Name>MonoGame.Framework.MacOS</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AssetLoader\AssetLoader.csproj">
       <Project>{E09AFBB6-065A-4C7A-814C-F45271928E6E}</Project>
       <Name>AssetLoader</Name>

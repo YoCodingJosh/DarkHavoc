@@ -91,7 +91,11 @@ namespace DarkHavoc
             Assets.StartCache(ScreenManager.Game.Content);
 
             // Load and Parse our credits file.
+#if !MONOMAC
             DarkHavocGame.creditsFile = new Credits("./Resources/Data/CREDITS.JXD");
+#else
+			DarkHavocGame.creditsFile = new Credits("./Content/Data/CREDITS.JXD");
+#endif
 
             // Initialize our constants.
             GlobalConstants.Initialize(this.ScreenManager);

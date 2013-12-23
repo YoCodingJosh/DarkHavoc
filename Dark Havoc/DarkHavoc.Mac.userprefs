@@ -1,19 +1,17 @@
-﻿<Properties MonoDevelop.MonoMac.LastXamMacNagTime="12/22/2013 1:10:16 AM">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DarkHavoc/DataLoaders/Options.cs">
+﻿<Properties MonoDevelop.MonoMac.LastXamMacNagTime="12/23/2013 12:15:42 AM">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Distribution" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="DarkHavoc/Program.cs">
     <Files>
-      <File FileName="DarkHavoc/Screens/RatingDisplayScreen.cs" Line="62" Column="14" />
-      <File FileName="DarkHavoc/DarkHavocGame.cs" Line="91" Column="4" />
-      <File FileName="DarkHavoc.Engine/JoshoEngine.cs" Line="46" Column="17" />
-      <File FileName="DarkHavoc.Engine/ScreenManager.cs" Line="108" Column="16" />
-      <File FileName="DarkHavoc/DataLoaders/Options.cs" Line="14" Column="10" />
+      <File FileName="DarkHavoc/DarkHavocGame.cs" Line="87" Column="1" />
+      <File FileName="DarkHavoc.Engine/JoshoEngine.cs" Line="1" Column="1" />
+      <File FileName="DarkHavoc.Engine/ScreenManager.cs" Line="1" Column="1" />
+      <File FileName="DarkHavoc/Program.cs" Line="35" Column="1" />
+      <File FileName="DarkHavoc/Screens/MainMenuScreen.cs" Line="89" Column="77" />
+      <File FileName="../Dependencies/MonoGame/MonoGame.Framework/Graphics/GraphicsExtensions.cs" Line="745" Column="45" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/joshuakennedy/Documents/DarkHavoc/Dark Havoc/DarkHavoc/DarkHavocGame.cs" line="104" column="1" />
-      <Breakpoint file="/Users/joshuakennedy/Documents/DarkHavoc/Dark Havoc/DarkHavoc/DarkHavocGame.cs" line="167" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

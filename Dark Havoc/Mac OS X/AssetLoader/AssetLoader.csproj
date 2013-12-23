@@ -30,17 +30,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="Lidgren.Network">
-      <HintPath>..\..\..\Dependencies\Binaries\Mac OS X\Lidgren.Network.dll</HintPath>
-    </Reference>
-    <Reference Include="MonoGame.Framework">
-      <HintPath>..\..\..\Dependencies\Binaries\Mac OS X\MonoGame.Framework.dll</HintPath>
-    </Reference>
     <Reference Include="Tao.Sdl">
       <HintPath>..\..\..\Dependencies\Binaries\Mac OS X\Tao.Sdl.dll</HintPath>
     </Reference>
-    <Reference Include="MonoMac">
-      <HintPath>..\..\..\Dependencies\Binaries\Mac OS X\MonoMac.dll</HintPath>
+    <Reference Include="MonoMac, Version=0.0.0.0, Culture=neutral">
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
@@ -50,124 +44,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Content\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="..\..\Resources\Animations\HDDACCESSINDICATOR.ini">
-      <Link>Content\Animations\HDDACCESSINDICATOR.ini</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\Resources\Animations\HDDACCESSINDICATOR.png">
-      <Link>Content\Animations\HDDACCESSINDICATOR.png</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\Resources\Animations\MissileExplosion.ini">
-      <Link>Content\Animations\MissileExplosion.ini</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\Resources\Animations\MissileExplosion.png">
-      <Link>Content\Animations\MissileExplosion.png</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\Resources\Data\CREDITS.JXD">
-      <Link>Content\Data\CREDITS.JXD</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\Resources\Effects\desaturate.mgfx">
-      <Link>Content\Effects\desaturate.mgfx</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\Resources\Effects\disappear.mgfx">
-      <Link>Content\Effects\disappear.mgfx</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\Resources\Fonts\ConsoleFont.spritefont">
-      <Link>Content\Fonts\ConsoleFont.spritefont</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\Resources\Fonts\CreditsMajorTaskFont.spritefont">
-      <Link>Content\Fonts\CreditsMajorTaskFont.spritefont</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\Resources\Fonts\CreditsSubtitleFont.spritefont">
-      <Link>Content\Fonts\CreditsSubtitleFont.spritefont</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\Resources\Fonts\CreditsTaskAuthorFont.spritefont">
-      <Link>Content\Fonts\CreditsTaskAuthorFont.spritefont</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\Resources\Fonts\DialogFont.spritefont">
-      <Link>Content\Fonts\DialogFont.spritefont</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\Resources\Fonts\DialogTitleFont.spritefont">
-      <Link>Content\Fonts\DialogTitleFont.spritefont</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\Resources\Fonts\GameplayFont.spritefont">
-      <Link>Content\Fonts\GameplayFont.spritefont</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\Resources\Fonts\MenuFont.spritefont">
-      <Link>Content\Fonts\MenuFont.spritefont</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\Resources\Images\DarkHavocLogo.png">
-      <Link>Content\Images\DarkHavocLogo.png</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\Resources\Images\DarkHavocLogo_old.png">
-      <Link>Content\Images\DarkHavocLogo_old.png</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\Resources\Images\JoshuaKennedyLogo.png">
-      <Link>Content\Images\JoshuaKennedyLogo.png</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\Resources\Images\NotificationHighlight.png">
-      <Link>Content\Images\NotificationHighlight.png</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\Resources\Images\blank.png">
-      <Link>Content\Images\blank.png</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\Resources\Images\esrb_rp.png">
-      <Link>Content\Images\esrb_rp.png</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\Resources\Images\green_arrow.png">
-      <Link>Content\Images\green_arrow.png</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\Resources\Images\waterfall.jpg">
-      <Link>Content\Images\waterfall.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\Resources\Images\waterfall_p.jpg">
-      <Link>Content\Images\waterfall_p.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\Resources\Sprites\HalfCircle.png">
-      <Link>Content\Sprites\HalfCircle.png</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\Resources\Sprites\HomingMissile.png">
-      <Link>Content\Sprites\HomingMissile.png</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\Resources\Sprites\LightningSegment.png">
-      <Link>Content\Sprites\LightningSegment.png</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\Resources\Sprites\PlayerShip.png">
-      <Link>Content\Sprites\PlayerShip.png</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\Resources\Sprites\Star.png">
-      <Link>Content\Sprites\Star.png</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <ProjectReference Include="..\..\..\Dependencies\MonoGame\MonoGame.Framework\MonoGame.Framework.MacOS.csproj">
+      <Project>{36C538E6-C32A-4A8D-A39C-566173D7118E}</Project>
+      <Name>MonoGame.Framework.MacOS</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>
