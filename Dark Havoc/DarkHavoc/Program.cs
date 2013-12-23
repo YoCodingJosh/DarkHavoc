@@ -44,7 +44,7 @@ namespace DarkHavoc
 #endif
         }
 
-        static void CurrentDomain_ProcessExit(object sender, EventArgs e)
+		public static void CurrentDomain_ProcessExit(object sender, EventArgs e)
         {
             Debug.WriteLine("[Dark Havoc] Exiting game...");
             JoshoEngine.DestroyEngine(gameInstance);
@@ -64,6 +64,13 @@ namespace DarkHavoc
 		public override bool ApplicationShouldTerminateAfterLastWindowClosed(NSApplication sender)
 		{
 			return true;
+		}
+
+		public override NSApplicationTerminateReply ApplicationShouldTerminate (NSApplication sender)
+		{
+			Program.CurrentDomain_ProcessExit(null, EventArgs.Empty);
+
+			return NSApplicationTerminateReply.Now;
 		}
 	}
 #endif
