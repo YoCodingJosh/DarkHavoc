@@ -18,4 +18,7 @@ Platforms
 Roadmap
 -------
 
-Coming soon! :)
+* Fix Mac OS X Specific Bugs
+* Experiment with MonoGame-SDL2 (Might fix the aforementioned Mac OS X bugs)
+* Finish implementing Practice Mode
+    * lol sublist
