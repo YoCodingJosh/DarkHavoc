@@ -30,11 +30,8 @@ namespace DarkHavoc
         {
             ContentManager content = ScreenManager.Game.Content;
 
-#if WINDOWS
 			ratingLogoTexture = content.Load<Texture2D>("./Images/esrb_rp");
-#elif MONOMAC
-			ratingLogoTexture = content.Load<Texture2D>("./Images/esrb_rp");
-#endif
+
             //headingFont = content.Load<SpriteFont>("./Fonts/ConsoleFont");
 
             //headingText = "THIS GAME" + Environment.NewLine + "HAS NOT YET BEEN RATED!";

@@ -22,10 +22,10 @@ namespace DarkHavoc
         {
             Debug.WriteLine("[Dark Havoc] Starting up...");
 
+#if !MONOMAC
             // Add application exit event hook.
             AppDomain.CurrentDomain.ProcessExit += new EventHandler(CurrentDomain_ProcessExit);
 
-#if !MONOMAC
             // Create game instance.
             gameInstance = new DarkHavocGame();
 
@@ -33,6 +33,7 @@ namespace DarkHavoc
             gameInstance.Run();
 
 #else
+			Debug.WriteLine("[Dark Havoc] Initializing Mac OS X Subsystem...");
 
 			NSApplication.Init();
 
@@ -44,18 +45,20 @@ namespace DarkHavoc
 #endif
         }
 
+#if !MONOMAC
 		public static void CurrentDomain_ProcessExit(object sender, EventArgs e)
         {
             Debug.WriteLine("[Dark Havoc] Exiting game...");
             JoshoEngine.DestroyEngine(gameInstance);
             Debug.WriteLine("[Dark Havoc] Bye!");
         }
+#endif
     }
 
 #if MONOMAC
 	internal class AppDelegate : NSApplicationDelegate
 	{
-		public override void FinishedLaunching(MonoMac.Foundation.NSObject notification)
+		public override void FinishedLaunching(NSObject notification)
 		{
 			Program.gameInstance = new DarkHavocGame();
 			Program.gameInstance.Run();
@@ -68,7 +71,9 @@ namespace DarkHavoc
 
 		public override NSApplicationTerminateReply ApplicationShouldTerminate (NSApplication sender)
 		{
-			Program.CurrentDomain_ProcessExit(null, EventArgs.Empty);
+			Debug.WriteLine("[Dark Havoc] Exiting game...");
+			JoshoEngine.DestroyEngine(Program.gameInstance);
+			Debug.WriteLine("[Dark Havoc] Passing NSApplicationTerminateReply.Now to the OS. Good bye, I'll miss you!");
 
 			return NSApplicationTerminateReply.Now;
 		}
