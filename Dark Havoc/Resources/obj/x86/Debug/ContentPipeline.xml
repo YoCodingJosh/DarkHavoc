@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Images\blank.png</Source>
+      <Name>Images\blank</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\AssetLoader\bin\x86\Debug\Resources\Images\blank.xnb</Output>
+      <Time>2013-12-25T11:48:43.8069871-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\green_arrow.png</Source>
+      <Name>Images\green_arrow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\AssetLoader\bin\x86\Debug\Resources\Images\green_arrow.xnb</Output>
+      <Time>2013-12-25T11:48:43.8089871-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\JoshuaKennedyLogo.png</Source>
+      <Name>Images\JoshuaKennedyLogo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\AssetLoader\bin\x86\Debug\Resources\Images\JoshuaKennedyLogo.xnb</Output>
+      <Time>2013-12-25T11:48:43.8049866-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\HalfCircle.png</Source>
+      <Name>Sprites\HalfCircle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\AssetLoader\bin\x86\Debug\Resources\Sprites\HalfCircle.xnb</Output>
+      <Time>2013-12-25T11:48:44.0663923-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\LightningSegment.png</Source>
+      <Name>Sprites\LightningSegment</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\AssetLoader\bin\x86\Debug\Resources\Sprites\LightningSegment.xnb</Output>
+      <Time>2013-12-25T11:48:44.0683829-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\waterfall.jpg</Source>
+      <Name>Images\waterfall</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\AssetLoader\bin\x86\Debug\Resources\Images\waterfall.xnb</Output>
+      <Time>2013-12-25T11:48:43.8109872-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Star.png</Source>
+      <Name>Sprites\Star</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\AssetLoader\bin\x86\Debug\Resources\Sprites\Star.xnb</Output>
+      <Time>2013-12-25T11:48:44.0693828-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\DarkHavocLogo.png</Source>
+      <Name>Images\DarkHavocLogo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\AssetLoader\bin\x86\Debug\Resources\Images\DarkHavocLogo.xnb</Output>
+      <Time>2013-12-25T11:48:43.802987-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\esrb_rp.png</Source>
+      <Name>Images\esrb_rp</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\AssetLoader\bin\x86\Debug\Resources\Images\esrb_rp.xnb</Output>
+      <Time>2013-12-25T11:48:43.8079869-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Animations\HDDACCESSINDICATOR.png</Source>
+      <Name>Animations\HDDACCESSINDICATOR</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\AssetLoader\bin\x86\Debug\Resources\Animations\HDDACCESSINDICATOR.xnb</Output>
+      <Time>2013-12-25T11:48:43.7534033-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\NotificationHighlight.png</Source>
+      <Name>Images\NotificationHighlight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\AssetLoader\bin\x86\Debug\Resources\Images\NotificationHighlight.xnb</Output>
+      <Time>2013-12-25T11:48:43.805986-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\PlayerShip.png</Source>
+      <Name>Sprites\PlayerShip</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\AssetLoader\bin\x86\Debug\Resources\Sprites\PlayerShip.xnb</Output>
+      <Time>2013-12-25T11:48:44.0683829-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\HomingMissile.png</Source>
+      <Name>Sprites\HomingMissile</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\AssetLoader\bin\x86\Debug\Resources\Sprites\HomingMissile.xnb</Output>
+      <Time>2013-12-25T11:48:44.0663923-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Animations\MissileExplosion.png</Source>
+      <Name>Animations\MissileExplosion</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\AssetLoader\bin\x86\Debug\Resources\Animations\MissileExplosion.xnb</Output>
+      <Time>2013-12-25T11:48:43.7593864-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\ConsoleFont.spritefont</Source>
+      <Name>Fonts\ConsoleFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\AssetLoader\bin\x86\Debug\Resources\Fonts\ConsoleFont.xnb</Output>
+      <Time>2013-12-25T11:48:43.7949581-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\DialogFont.spritefont</Source>
+      <Name>Fonts\DialogFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\AssetLoader\bin\x86\Debug\Resources\Fonts\DialogFont.xnb</Output>
+      <Time>2013-12-25T11:48:43.7979857-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\DialogTitleFont.spritefont</Source>
+      <Name>Fonts\DialogTitleFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\AssetLoader\bin\x86\Debug\Resources\Fonts\DialogTitleFont.xnb</Output>
+      <Time>2013-12-25T11:48:43.7989856-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\GameplayFont.spritefont</Source>
+      <Name>Fonts\GameplayFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\AssetLoader\bin\x86\Debug\Resources\Fonts\GameplayFont.xnb</Output>
+      <Time>2013-12-25T11:48:43.8009865-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\MenuFont.spritefont</Source>
+      <Name>Fonts\MenuFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\AssetLoader\bin\x86\Debug\Resources\Fonts\MenuFont.xnb</Output>
+      <Time>2013-12-25T11:48:43.8009865-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\CreditsSubtitleFont.spritefont</Source>
+      <Name>Fonts\CreditsSubtitleFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\AssetLoader\bin\x86\Debug\Resources\Fonts\CreditsSubtitleFont.xnb</Output>
+      <Time>2013-12-25T11:48:43.7969825-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\CreditsMajorTaskFont.spritefont</Source>
+      <Name>Fonts\CreditsMajorTaskFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\AssetLoader\bin\x86\Debug\Resources\Fonts\CreditsMajorTaskFont.xnb</Output>
+      <Time>2013-12-25T11:48:43.795957-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\CreditsTaskAuthorFont.spritefont</Source>
+      <Name>Fonts\CreditsTaskAuthorFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\AssetLoader\bin\x86\Debug\Resources\Fonts\CreditsTaskAuthorFont.xnb</Output>
+      <Time>2013-12-25T11:48:43.7979857-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Snowflake.png</Source>
+      <Name>Sprites\Snowflake</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\AssetLoader\bin\x86\Debug\Resources\Sprites\Snowflake.xnb</Output>
+      <Time>2013-12-25T11:48:44.0693828-06:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>true</CompressContent>
+      <RootDirectory>C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\Resources\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\AssetLoader\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\Resources\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\AssetLoader\bin\x86\Debug\Resources\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T13:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T13:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2013-12-15T18:56:13.4037521-06:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

@@ -1,0 +1,64 @@
+﻿	______           _               
+	|  _  \         | |              
+	| | | |__ _ _ __| | __           
+	| | | / _` | '__| |/ /           
+	| |/ / (_| | |  |   <            
+	|___/ \__,_|_|  |_|\_\           
+									 
+ _   _   ___  _   _  _____ _____ 
+| | | | / _ \| | | ||  _  /  __ \
+| |_| |/ /_\ \ | | || | | | /  \/
+|  _  ||  _  | | | || | | | |    
+| | | || | | \ \_/ /\ \_/ / \__/\
+\_| |_/\_| |_/\___/  \___/ \____/
+
+
+Dark Havoc - A Joshua Kennedy Production
+
+Programming
+======
+
+Engine Programming - Joshua Kennedy
+Gameplay Programming - Joshua Kennedy
+Platform Programming - Joshua Kennedy
+Gameplay Scripting - Joshua Kennedy
+Subsystem Programming - Joshua Kennedy
+Strategic Strategizing - Joshua Kennedy
+
+Design
+======
+
+Game Concept - Joshua Kennedy
+Level Design - Joshua Kennedy
+Game Design - Joshua Kennedy
+Philosophical Thinking - Joshua Kennedy
+
+Management
+======
+
+Producer - Joshua Kennedy
+Director - Joshua Kennedy
+Project Manager - Joshua Kennedy
+Big Enchilada - Joshua Kennedy
+
+Music
+======
+
+Menu Music
+	- File: ./Resources/Music/kool-gro.xm
+	- Title: Kool-GroOve
+	- Author: Unknown
+	- URL: http://modarchive.org/index.php?request=view_by_moduleid&query=48157
+
+Credits Music
+	- File: ./Resources/Music/betrayer_-_one.xm
+	- Title: One
+	- Author: BETRAYER
+	- URL: http://modarchive.org/index.php?request=view_by_moduleid&query=157679
+
+Special Thanks
+======
+
+Sony Computer Entertainment America
+My Family
+You, the player!!

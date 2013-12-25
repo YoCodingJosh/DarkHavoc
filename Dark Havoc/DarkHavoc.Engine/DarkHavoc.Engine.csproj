@@ -43,13 +43,12 @@
     <XnaCompressContent>true</XnaCompressContent>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MonoGame.Framework, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Dependencies\OpenGL_Win32\MonoGame.Framework.dll</HintPath>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>..\..\Dependencies\Binaries\Windows\MonoGame.Framework.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="OpenTK">
-      <HintPath>..\Dependencies\OpenGL_Win32\OpenTK.dll</HintPath>
+      <HintPath>..\..\Dependencies\Binaries\Windows\OpenTK.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
@@ -87,6 +86,7 @@
     <Compile Include="Effects\Lightning\ILightning.cs" />
     <Compile Include="Effects\Lightning\LightningBolt.cs" />
     <Compile Include="Effects\Lightning\LightningText.cs" />
+    <Compile Include="Effects\Snowfall.cs" />
     <Compile Include="Effects\Starfield\Star.cs" />
     <Compile Include="Effects\Starfield\Starfield.cs" />
     <Compile Include="GameScreen.cs" />
