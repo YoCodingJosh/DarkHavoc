@@ -13,7 +13,7 @@ namespace DarkHavoc
         //private SpriteFont headingFont;
         //private string headingText;
         //private Vector2 ratingPosition;
-        private Vector2 ratingCenterPosition;
+		//private Vector2 ratingCenterPosition;
         //private Vector2 headingPosition;
         private float currentTime;
         private float timeToStayOnScreen;
@@ -36,7 +36,8 @@ namespace DarkHavoc
 
             //headingText = "THIS GAME" + Environment.NewLine + "HAS NOT YET BEEN RATED!";
             
-			ratingCenterPosition = Helper.CenterOnScreen(ScreenManager, ratingLogoTexture);
+			//ratingCenterPosition = Helper.CenterOnScreen(ScreenManager, ratingLogoTexture);
+			//ratingCenterPosition = centerOfScreen;
 
             //ratingPosition = new Vector2(ratingCenterPosition.X - (ratingLogoTexture.Width / 2) - 30, ratingCenterPosition.Y);
 
@@ -76,12 +77,13 @@ namespace DarkHavoc
         public override void Draw(GameTime gameTime)
         {
             Color myColor = new Color(TransitionAlpha, TransitionAlpha, TransitionAlpha);
+			Vector2 centerOfScreen = new Vector2(ScreenManager.GraphicsDevice.Viewport.TitleSafeArea.Center.X, ScreenManager.GraphicsDevice.Viewport.TitleSafeArea.Center.Y);
 
             SpriteBatch spriteBatch = ScreenManager.SpriteBatch;
 
             spriteBatch.Begin();
 
-            spriteBatch.Draw(ratingLogoTexture, ratingCenterPosition, myColor);
+			spriteBatch.Draw(ratingLogoTexture, centerOfScreen, null, myColor, 0f, new Vector2(ratingLogoTexture.Width / 2, ratingLogoTexture.Height / 2), 1.0f, SpriteEffects.None, 0f); // 8
 
             //spriteBatch.DrawString(headingFont, headingText, headingPosition, myColor);
 

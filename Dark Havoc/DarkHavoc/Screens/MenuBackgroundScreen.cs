@@ -24,6 +24,9 @@ namespace DarkHavoc
         // Our starfield.
         Starfield starfield;
 
+		// Our falling snow. (For Christmas Time!)
+		Snowfall snowfall;
+
         public MenuBackgroundScreen()
         {
             // If we just started the game...
@@ -49,6 +52,12 @@ namespace DarkHavoc
 
             // Initialize the starfield.
             starfield.Initialize();
+
+			// Create the snowfall with ScreenManager handle being passed to it.
+			snowfall = new Snowfall(ScreenManager);
+
+			// Initialize it.
+			snowfall.Initialize();
         }
 
         public override void Update(GameTime gameTime, bool otherScreenHasFocus, bool coveredByOtherScreen)
@@ -66,7 +75,8 @@ namespace DarkHavoc
             spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.Additive);
 
             // Draw Starfield.
-            starfield.Draw(spriteBatch, gameTime);
+			//starfield.Draw(spriteBatch, gameTime);
+			snowfall.Draw(spriteBatch);
 
             // End SpriteBatch.
             spriteBatch.End();

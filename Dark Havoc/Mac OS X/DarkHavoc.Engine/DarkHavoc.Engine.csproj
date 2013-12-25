@@ -134,6 +134,9 @@
     <Compile Include="..\..\DarkHavoc.Engine\Screens\CreditsScreen.cs">
       <Link>Screens\CreditsScreen.cs</Link>
     </Compile>
+    <Compile Include="..\..\DarkHavoc.Engine\Effects\Snowfall\Snowfall.cs">
+      <Link>Effects\Snowfall\Snowfall.cs</Link>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -144,6 +147,7 @@
     <Folder Include="Menu\" />
     <Folder Include="Properties\" />
     <Folder Include="Screens\" />
+    <Folder Include="Effects\Snowfall\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Dependencies\MonoGame\MonoGame.Framework\MonoGame.Framework.MacOS.csproj">

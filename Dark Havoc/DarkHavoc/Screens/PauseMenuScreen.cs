@@ -38,15 +38,15 @@ namespace DarkHavoc
             options = new MenuEntry("Options");
             quitToMenu = new MenuEntry("Quit to Main Menu");
 #if PC
-            quitToOS = new MenuEntry("Quit to OS");
+			quitToOS = new MenuEntry("Exit Game");
 #endif
 
             // Attach event hooks to entry selected handler.
             resume.Selected += OnCancel;
 
-            if (gameType == GameType.Campaign)
+			if (myGameType == GameType.Campaign)
             {
-                // implement :)
+				// implement load and save game menu entries. :)
             }
 
             options.Selected += new EventHandler<PlayerIndexEventArgs>(options_Selected);
@@ -63,6 +63,11 @@ namespace DarkHavoc
 
             MenuEntries.Add(options);
             MenuEntries.Add(quitToMenu);
+
+#if PC
+			quitToOS.Selected += new EventHandler<PlayerIndexEventArgs>(quitToOS_Selected);
+			MenuEntries.Add(quitToOS);
+#endif
         }
 
         public override void UnloadContent()
@@ -70,6 +75,11 @@ namespace DarkHavoc
             ScreenManager.Game.IsMouseVisible = false;
             base.UnloadContent();
         }
+
+		void quitToOS_Selected(object sender, PlayerIndexEventArgs e)
+		{
+			ScreenManager.Game.Exit();
+		}
 
         void quitToMenu_Selected(object sender, PlayerIndexEventArgs e)
         {

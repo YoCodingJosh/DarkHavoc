@@ -147,9 +147,6 @@
     <Compile Include="..\..\DarkHavoc\Screens\SplashScreen.cs">
       <Link>Screens\SplashScreen.cs</Link>
     </Compile>
-    <Compile Include="..\..\DarkHavoc\Screens\StallScreen.cs">
-      <Link>Screens\StallScreen.cs</Link>
-    </Compile>
     <Compile Include="..\..\DarkHavoc\Screens\TitleScreen.cs">
       <Link>Screens\TitleScreen.cs</Link>
     </Compile>
@@ -258,6 +255,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </BundleResource>
     <BundleResource Include="Content\Sprites\Star.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="..\..\Resources\Sprites\Snowflake.png">
+      <Link>Content\Sprites\Snowflake.png</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </BundleResource>
   </ItemGroup>

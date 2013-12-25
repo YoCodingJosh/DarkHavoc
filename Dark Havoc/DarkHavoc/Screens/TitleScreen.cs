@@ -89,7 +89,7 @@ namespace DarkHavoc
 
             if (passThrough)
             {
-                float transitionOffset = (float)Math.Pow(TransitionPosition, 2);
+				//float transitionOffset = (float)Math.Pow(TransitionPosition, 2);
 
                 if (logoPosition.Y >= endPos.Y)
                 {

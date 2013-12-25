@@ -43,6 +43,7 @@ namespace AssetLoader
         public static Texture2D starTexture;
         public static Texture2D playerShipTexture;
         public static Texture2D enemyMissileTexture;
+		public static Texture2D snowflakeTexture;
 
         // Animations
         public static Texture2D fileAccessAnimationTexture;
@@ -83,6 +84,7 @@ namespace AssetLoader
                 starTexture = content.Load<Texture2D>("./Sprites/star");
                 playerShipTexture = content.Load<Texture2D>("./Sprites/PlayerShip");
                 enemyMissileTexture = content.Load<Texture2D>("./Sprites/HomingMissile");
+				snowflakeTexture = content.Load<Texture2D>("./Sprites/Snowflake");
 
                 // Animations
                 fileAccessAnimationTexture = content.Load<Texture2D>("./Animations/HDDACCESSINDICATOR");

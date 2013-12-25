@@ -27,3 +27,4 @@ Roadmap
 * Think of a story for the campaign
 * Write the design document for Sony.
 * Remove unused code.
+* Map out Achievements/Trophies

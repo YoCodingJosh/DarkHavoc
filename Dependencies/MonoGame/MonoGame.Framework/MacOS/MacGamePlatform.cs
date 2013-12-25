@@ -285,7 +285,7 @@ namespace Microsoft.Xna.Framework
                 // I will leave this here just in case someone can figure out
                 // how to do a full screen with this and still get Alt + Tab to
                 // friggin work.
-                //_mainWindow.ContentView.EnterFullscreenModeWithOptions(NSScreen.MainScreen,new NSDictionary());
+				//_mainWindow.ContentView.EnterFullscreenModeWithOptions(NSScreen.MainScreen,new NSDictionary());
 
                 _wasResizeable = AllowUserResizing;
 
@@ -304,7 +304,7 @@ namespace Microsoft.Xna.Framework
                 // FIXME: EnterFullScreen gets called very early and interferes
                 //        with Synchronous mode, so disabling this for now.
                 //        Hopefully this does not cause excessive havoc.
-                //_mainWindow.MakeKeyAndOrderFront(Window);
+                _mainWindow.MakeKeyAndOrderFront(Window);
                 ResetWindowBounds();
                 _mainWindow.HidesOnDeactivate = true;
                 _gameWindow.MouseState.LeftButton = ButtonState.Released;
@@ -347,7 +347,7 @@ namespace Microsoft.Xna.Framework
                 // FIXME: EnterFullScreen gets called very early and interferes
                 //        with Synchronous mode, so disabling this for now.
                 //        Hopefully this does not cause excessive havoc.
-                //_mainWindow.MakeKeyAndOrderFront(Window);
+                _mainWindow.MakeKeyAndOrderFront(Window);
                 ResetWindowBounds();
                 _mainWindow.HidesOnDeactivate = false;
                 _gameWindow.MouseState.LeftButton = ButtonState.Released;

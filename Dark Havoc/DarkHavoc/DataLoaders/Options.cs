@@ -42,7 +42,12 @@ namespace DarkHavoc
             get { return sound; }
         }
 
-        private string UserOS;
+		private string userOperatingSystem;
+
+		public string UserOS
+		{
+			get { return userOperatingSystem; }
+		}
 
         public Options()
         {
@@ -52,7 +57,7 @@ namespace DarkHavoc
             music = true;
             sound = true;
 
-            UserOS = ((Environment.Is64BitOperatingSystem) ? "64-bit" : "32-bit") + " " + Environment.OSVersion.ToString();
+			userOperatingSystem = ((Environment.Is64BitOperatingSystem) ? "64-bit" : "32-bit") + " " + Environment.OSVersion.ToString();
 
             if (!File.Exists("./Settings.josho"))
                 ResetOptions();

@@ -99,7 +99,7 @@ namespace DarkHavoc
 
             notificationAnimation.Draw(spriteBatch, myColor);
 
-            spriteBatch.DrawString(notificationFont, notificationString, centerOfScreen, myColor, 0f, stringCenter, 1.0f, SpriteEffects.None, 0f);
+			spriteBatch.DrawString(notificationFont, notificationString, centerOfScreen, myColor, 0f, stringCenter, 1.0f, SpriteEffects.None, 0f);
 
             spriteBatch.End();
         }

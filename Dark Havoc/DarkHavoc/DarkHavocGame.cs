@@ -9,6 +9,8 @@ using System.ComponentModel;
 #elif MONOMAC
 using MonoMac;
 using MonoMac.AppKit;
+using MonoMac.Foundation;
+using MonoMac.ObjCRuntime;
 #endif
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -110,13 +112,21 @@ namespace DarkHavoc
             graphics.PreferredBackBufferWidth = 1280;
             graphics.PreferredBackBufferHeight = 720;
 
-            // Sync with the vertical trace.
-            graphics.SynchronizeWithVerticalRetrace = true;
-
             graphics.ToggleFullScreen();
 
             graphics.ApplyChanges();
         }
+
+		public static void ToggleFullScreen(bool toggle)
+		{
+			// 720p is best suited for us.
+			graphics.PreferredBackBufferWidth = 1280;
+			graphics.PreferredBackBufferHeight = 720;
+
+			graphics.IsFullScreen = toggle;
+
+			graphics.ApplyChanges();
+		}
 #endif
 
         /// <summary>
@@ -131,6 +141,14 @@ namespace DarkHavoc
             // Create new Options in case it has been deleted or we're starting for the first time.
             GameOptions = new Options();
 
+			Debug.WriteLine("[Dark Havoc] Running on " + GameOptions.UserOS);
+#if MONOMAC
+			NSDictionary systemVersionDictionary = new NSDictionary(@"/System/Library/CoreServices/SystemVersion.plist");
+			NSString versionString = (NSString)systemVersionDictionary.ObjectForKey((NSString)@"ProductVersion");
+
+			Debug.WriteLine("[Dark Havoc] Running on Mac OS X Version: " + versionString.ToString());
+#endif
+
             // Does the options file exist?
             if (File.Exists("./Settings.josho"))
                 Options.DeserializeToObject(out GameOptions); // If so then deserialize it!
@@ -143,7 +161,7 @@ namespace DarkHavoc
             }
 
             // Set the window title to Dark Havoc! :)
-            Window.Title = "Dark Havoc";
+			this.Window.Title = "Dark Havoc";
 
             // Set the content root directory to the Resources folder.
 #if WINDOWS
@@ -188,12 +206,11 @@ namespace DarkHavoc
             // Enable multi-sampled back buffer.
             graphics.PreferMultiSampling = true;
 
-			graphics.ApplyChanges();
+			//graphics.ApplyChanges();
 
 #if PC
             Console.WriteLine("Fullscreen is " + GameOptions.IsFullscreen);
-            if (GameOptions.IsFullscreen)
-                graphics.ToggleFullScreen();
+			ToggleFullScreen(GameOptions.IsFullscreen);
 #endif
 
 #if WINDOWS

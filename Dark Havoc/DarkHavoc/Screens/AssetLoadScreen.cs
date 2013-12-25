@@ -87,7 +87,7 @@ namespace DarkHavoc
             // In case the user has a fast computer, the asset load screen won't just be a flicker.
             Thread.Sleep(1000);
 
-            // Our magic method. This loads the assets into memory.
+			// Our magic method. This loads the assets into memsory.
             Assets.StartCache(ScreenManager.Game.Content);
 
             // Load and Parse our credits file.
