@@ -3,10 +3,19 @@ using Microsoft.Xna.Framework;
 
 namespace DarkHavoc.Engine.API
 {
+	/// <summary>
+	/// Just some useful utilities for messing with Colors.
+	/// </summary>
     public static class ColorUtil
     {
-        // Make a color from hue, saturation and value parameters. Hue should be
-        // between 0 and 6, while saturation and value should be between 0 and 1.
+		/// <summary>
+		/// Make a color from hue, saturation and value parameters.
+		/// </summary>
+		/// <returns>A Color from it's respective HSV representation.</returns>
+		/// <remarks>Hue should be between 0 and 6, while saturation and value should be between 0 and 1.</remarks>
+		/// <param name="h">The Hue.</param>
+		/// <param name="s">The Saturation.</param>
+		/// <param name="v">The Value.</param>
         public static Color HSVToColor(float h, float s, float v)
         {
             if (h == 0 && s == 0)
@@ -24,6 +33,11 @@ namespace DarkHavoc.Engine.API
             else return new Color(c + m, m, x + m);
         }
 
+		/// <summary>
+		/// Gets a Color from string.
+		/// </summary>
+		/// <returns>Color detected from specified string.</returns>
+		/// <param name="c">The Color to return as a string.</param>
         public static Color FromString(string c)
         {
             var prop = typeof(Color).GetProperty(c);
