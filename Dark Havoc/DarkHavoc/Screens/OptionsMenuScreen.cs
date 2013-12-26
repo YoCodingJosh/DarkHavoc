@@ -92,7 +92,7 @@ namespace DarkHavoc
 
             DarkHavocGame.GameOptions = options;
 
-            Options.SerializeToFile(DarkHavocGame.GameOptions);
+			Options.SerializeToFile(DarkHavocGame.AppDataLocation, DarkHavocGame.GameOptions);
         }
 
         void sound_Selected(object sender, PlayerIndexEventArgs e)

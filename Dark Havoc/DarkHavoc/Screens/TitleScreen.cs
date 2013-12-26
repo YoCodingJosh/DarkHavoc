@@ -112,7 +112,7 @@ namespace DarkHavoc
                 KeyboardState keyboardState = Keyboard.GetState();
                 GamePadState gamePadState = GamePad.GetState(PlayerIndex.One);
 
-                // If the number keys on the keyboard is greater than 0 (incase they're pressing 2 keys at once)...
+				// If the number keys on the keyboard is greater than 0 (in case they're pressing 2 keys at once)...
                 // or the mouse is clicked
                 if (keyboardState.GetPressedKeys().Length > 0 || input.IsNewLeftMouseClick())
                 {

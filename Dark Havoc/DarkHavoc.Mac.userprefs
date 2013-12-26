@@ -1,18 +1,42 @@
-﻿<Properties MonoDevelop.MonoMac.LastXamMacNagTime="12/25/2013 7:21:20 PM">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DarkHavoc.Engine/API/MonoGameExtensions.cs">
+﻿<Properties MonoDevelop.MonoMac.LastXamMacNagTime="12/26/2013 7:43:40 PM">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Distribution" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="DarkHavoc/DarkHavocGame.cs">
     <Files>
-      <File FileName="DarkHavoc/DarkHavocGame.cs" Line="1" Column="1" />
-      <File FileName="DarkHavoc/Screens/RatingDisplayScreen.cs" Line="1" Column="1" />
+      <File FileName="DarkHavoc/DarkHavocGame.cs" Line="140" Column="22" />
       <File FileName="DarkHavoc/Entities/Player.cs" Line="1" Column="1" />
-      <File FileName="DarkHavoc/Screens/MainMenuScreen.cs" Line="1" Column="1" />
-      <File FileName="DarkHavoc/Screens/MenuBackgroundScreen.cs" Line="1" Column="1" />
-      <File FileName="DarkHavoc.Engine/Effects/Starfield/Starfield.cs" Line="1" Column="1" />
+      <File FileName="DarkHavoc/Screens/MainMenuScreen.cs" Line="18" Column="10" />
+      <File FileName="DarkHavoc/Screens/MenuBackgroundScreen.cs" Line="47" Column="3" />
+      <File FileName="DarkHavoc.Engine/Effects/Starfield/Starfield.cs" Line="26" Column="46" />
       <File FileName="AssetLoader/Assets.cs" Line="71" Column="79" />
-      <File FileName="DarkHavoc/Screens/AssetLoadScreen.cs" Line="31" Column="3" />
-      <File FileName="DarkHavoc.Engine/Effects/Snowfall/Snowfall.cs" Line="42" Column="40" />
-      <File FileName="DarkHavoc.Engine/API/MonoGameExtensions.cs" Line="15" Column="20" />
+      <File FileName="DarkHavoc/Screens/AssetLoadScreen.cs" Line="103" Column="3" />
+      <File FileName="DarkHavoc.Engine/Effects/Snowfall/Snowfall.cs" Line="159" Column="15" />
+      <File FileName="DarkHavoc/Screens/OptionsMenuScreen.cs" Line="76" Column="10" />
+      <File FileName="DarkHavoc/Game/PracticeMode.cs" Line="54" Column="51" />
+      <File FileName="DarkHavoc/Screens/TitleScreen.cs" Line="15" Column="1" />
+      <File FileName="DarkHavoc/Screens/RatingDisplayScreen.cs" Line="67" Column="14" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="AssetLoader" expanded="True" />
+          <Node name="DarkHavoc" expanded="True">
+            <Node name="Entities" expanded="True" />
+            <Node name="Game" expanded="True" />
+            <Node name="Screens" expanded="True" />
+            <Node name="DarkHavocGame.cs" selected="True" />
+          </Node>
+          <Node name="DarkHavoc.Engine" expanded="True">
+            <Node name="API" expanded="True" />
+            <Node name="DataReaders" expanded="True" />
+            <Node name="Effects" expanded="True">
+              <Node name="Snowfall" expanded="True" />
+              <Node name="Starfield" expanded="True" />
+            </Node>
+            <Node name="Menu" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

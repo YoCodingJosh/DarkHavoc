@@ -34,6 +34,15 @@ namespace DarkHavoc
 
         public static Credits creditsFile;
 
+		/// <summary>
+		/// The location to store application data like settings, game saves, etc.
+		/// </summary>
+		/// <remarks>
+		/// On Windows and Linux, this will default to the location local to the application.
+		/// On Mac OS X, this will default to "~/Library/Application Support/Dark Havoc/"
+		/// </remarks>
+		public static string AppDataLocation;
+
 #if WINDOWS
         public static Point GetCenterOfScreen(GraphicsDeviceManager gdm)
         {
@@ -156,16 +165,32 @@ namespace DarkHavoc
 
 			Debug.WriteLine("[Dark Havoc] Running on Mac OS X Version: " + versionString.ToString());
 #endif
+			string location = "";
+
+#if !MONOMAC
+			location = "./";
+#else
+			location = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "Library/Application Support/Dark Havoc/");
+			if (!Directory.Exists(location))
+				Directory.CreateDirectory(location);
+#endif
+
+			AppDataLocation = location;
 
             // Does the options file exist?
-            if (File.Exists("./Settings.josho"))
+			if (File.Exists(location + "Settings.josho"))
                 Options.DeserializeToObject(out GameOptions); // If so then deserialize it!
             else
             {
 #if WINDOWS
-                MessageBox.Show("Thanks for buying Dark Havoc!\n\nIf you run into any issues please, don't hesitate to contact me!", "Dark Havoc - First Run", MessageBoxButtons.OK, MessageBoxIcon.Information);
+				MessageBox.Show("Thanks for playing Dark Havoc!\n\nIf you run into any issues, please don't hesitate to contact me!", "Dark Havoc - First Run", MessageBoxButtons.OK, MessageBoxIcon.Information);
+#elif MONOMAC
+				NSAlert dialogue = new NSAlert();
+				dialogue.InformativeText = "Thanks for playing Dark Havoc!\n\nIf you run into any issues, please don't hesitate to contact me!";
+				dialogue.MessageText = "First Run";
+				dialogue.RunModal();
 #endif
-                Options.SerializeToFile(GameOptions); // Since we instantiated a default Options, just recreate it.
+				Options.SerializeToFile(location, GameOptions); // Since we instantiated a default Options, just recreate it.
             }
 
             // Set the window title to Dark Havoc! :)

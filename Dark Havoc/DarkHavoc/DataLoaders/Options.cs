@@ -90,10 +90,10 @@ namespace DarkHavoc
             }
         }
 
-        public static void SerializeToFile(Options options)
+		public static void SerializeToFile(string location, Options options)
         {
             BinaryFormatter bf = new BinaryFormatter();
-            FileStream fs = new FileStream("./Settings.josho", FileMode.Create);
+			FileStream fs = new FileStream(location + "Settings.josho", FileMode.Create);
 
             bf.Serialize(fs, options);
 
