@@ -97,9 +97,6 @@ namespace DarkHavoc
 			DarkHavocGame.creditsFile = new Credits("./Content/Data/CREDITS.JXD");
 #endif
 
-            // Initialize our constants.
-            GlobalConstants.Initialize(this.ScreenManager);
-
             // For equality on both sides of the initialization.
             Thread.Sleep(1000);
         }

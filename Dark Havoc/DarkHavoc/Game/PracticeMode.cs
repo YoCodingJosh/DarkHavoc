@@ -58,7 +58,10 @@ namespace DarkHavoc
                 player.UpdateInput(input, PlayerIndex.One);
             }
 
-            player.UpdateClamp(GlobalConstants.titleSafeViewport.Top, GlobalConstants.titleSafeViewport.Bottom, GlobalConstants.titleSafeViewport.Left, GlobalConstants.titleSafeViewport.Right);
+			player.UpdateClamp(ScreenManager.GraphicsDevice.Viewport.TitleSafeArea.Top,
+				ScreenManager.GraphicsDevice.Viewport.TitleSafeArea.Bottom,
+				ScreenManager.GraphicsDevice.Viewport.TitleSafeArea.Left,
+				ScreenManager.GraphicsDevice.Viewport.TitleSafeArea.Right);
         }
 
         public override void Update(GameTime gameTime, bool otherScreenHasFocus, bool coveredByOtherScreen)

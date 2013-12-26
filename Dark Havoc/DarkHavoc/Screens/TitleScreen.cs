@@ -54,7 +54,7 @@ namespace DarkHavoc
 
         public override void LoadContent()
         {
-            logoPosition = Helper.CenterOnScreen(ScreenManager, Assets.darkHavocLogo);
+			logoPosition = new Vector2(ScreenManager.GraphicsDevice.Viewport.TitleSafeArea.Center.X, ScreenManager.GraphicsDevice.Viewport.TitleSafeArea.Center.Y);
             endPos = new Vector2(logoPosition.X, logoPosition.Y - 128);
 
             //mainMenuMusic = JoshoEngine.MusicPlayer.LoadModule("./Resources/Music/kool-gro.xm");
@@ -63,6 +63,8 @@ namespace DarkHavoc
         public override void Update(GameTime gameTime, bool otherScreenHasFocus, bool coveredByOtherScreen)
         {
             base.Update(gameTime, otherScreenHasFocus, false);
+
+			logoPosition.X = ScreenManager.GraphicsDevice.Viewport.TitleSafeArea.Center.X;
 
             // If we're at the press any key screen then update the pulsating press any key text.
             if (!passThrough)
@@ -147,7 +149,8 @@ namespace DarkHavoc
             {
                 spriteBatch.Begin();
 
-                spriteBatch.Draw(Assets.darkHavocLogo, logoPosition, new Color(TransitionAlpha, TransitionAlpha, TransitionAlpha));
+				spriteBatch.Draw(Assets.darkHavocLogo, logoPosition, null, new Color(TransitionAlpha, TransitionAlpha, TransitionAlpha), 0f,
+					new Vector2(Assets.darkHavocLogo.Width / 2, Assets.darkHavocLogo.Height / 2), 1.0f, SpriteEffects.None, 1.0f);
 
                 spriteBatch.End();
             }
@@ -156,7 +159,8 @@ namespace DarkHavoc
                 // otherwise desaturate it.
                 spriteBatch.Begin(0, null, null, null, null, Assets.desaturateEffect);
 
-                spriteBatch.Draw(Assets.darkHavocLogo, logoPosition, new Color(TransitionAlpha, TransitionAlpha, TransitionAlpha, 0));
+				spriteBatch.Draw(Assets.darkHavocLogo, logoPosition, null, new Color(TransitionAlpha, TransitionAlpha, TransitionAlpha, 0), 0f,
+					new Vector2(Assets.darkHavocLogo.Width / 2, Assets.darkHavocLogo.Height / 2), 1.0f, SpriteEffects.None, 1.0f);
 
                 spriteBatch.End();
             }

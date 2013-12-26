@@ -196,8 +196,10 @@ namespace DarkHavoc.Engine.Effects
 
 			this.snowTexture = Assets.snowflakeTexture;
 
-			this.w = screenManagerInstance.Game.Window.ClientBounds.Width;
-			this.h = screenManagerInstance.Game.Window.ClientBounds.Height;
+			//this.w = screenManagerInstance.Game.Window.ClientBounds.Width;
+			//this.h = screenManagerInstance.Game.Window.ClientBounds.Height;
+			this.w = screenManagerInstance.GraphicsDevice.Viewport.TitleSafeArea.Width;
+			this.h = screenManagerInstance.GraphicsDevice.Viewport.TitleSafeArea.Height;
 
 			// Set the snow's quit point. It's the bottom of the screen plus the texture's height so it looks like the snow goes completely off screen.
 			this.quitPoint = new Point(0, this.Height + this.snowTexture.Height);
@@ -218,6 +220,20 @@ namespace DarkHavoc.Engine.Effects
 		{
 			if (!isSnowing)
 				return;
+
+			if (this.Width != screenManagerInstance.GraphicsDevice.Viewport.TitleSafeArea.Width || this.Height != screenManagerInstance.GraphicsDevice.Viewport.TitleSafeArea.Height)
+			{
+				this.w = screenManagerInstance.GraphicsDevice.Viewport.TitleSafeArea.Width;
+				this.h = screenManagerInstance.GraphicsDevice.Viewport.TitleSafeArea.Height;
+
+				// Set the snow's quit point. It's the bottom of the screen plus the texture's height so it looks like the snow goes completely off screen.
+				this.quitPoint = new Point(0, this.Height + this.snowTexture.Height);
+
+				// Set the snow's start point. It's the top of the screen minus the texture's height so it looks like it comes from somewhere, rather than appearing.
+				this.startPoint = new Point(0, 0 - this.snowTexture.Height);
+
+				this.Initialize();
+			}
 
 			for (int i = 0; i < this.snow.Length; i++)
 			{

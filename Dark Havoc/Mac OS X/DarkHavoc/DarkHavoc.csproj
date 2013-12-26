@@ -99,9 +99,6 @@
     <Compile Include="..\..\DarkHavoc\DarkHavocGame.cs">
       <Link>DarkHavocGame.cs</Link>
     </Compile>
-    <Compile Include="..\..\DarkHavoc\GlobalConstants.cs">
-      <Link>GlobalConstants.cs</Link>
-    </Compile>
     <Compile Include="..\..\DarkHavoc\GlobalEnums.cs">
       <Link>GlobalEnums.cs</Link>
     </Compile>

@@ -87,7 +87,7 @@ namespace DarkHavoc
         {
 #if PC
             if (options.IsFullscreen != DarkHavocGame.GameOptions.IsFullscreen)
-                DarkHavocGame.ToggleFullScreen();
+				DarkHavocGame.ToggleFullScreen(options.IsFullscreen);
 #endif
 
             DarkHavocGame.GameOptions = options;

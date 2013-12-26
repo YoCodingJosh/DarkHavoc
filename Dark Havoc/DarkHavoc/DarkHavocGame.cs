@@ -106,7 +106,8 @@ namespace DarkHavoc
 #endif
 
 #if PC
-        public static void ToggleFullScreen()
+		/*
+		public static void ToggleFullScreen()
         {
             // 720p is best suited for us.
             graphics.PreferredBackBufferWidth = 1280;
@@ -116,6 +117,7 @@ namespace DarkHavoc
 
             graphics.ApplyChanges();
         }
+        */
 
 		public static void ToggleFullScreen(bool toggle)
 		{
@@ -124,6 +126,12 @@ namespace DarkHavoc
 			graphics.PreferredBackBufferHeight = 720;
 
 			graphics.IsFullScreen = toggle;
+
+#if MONOMAC
+			Program.gameInstance.CenterWindow();
+#elif WINDOWS
+			this.Window.SetPosition(GetCenterOfScreen(graphics));
+#endif
 
 			graphics.ApplyChanges();
 		}
