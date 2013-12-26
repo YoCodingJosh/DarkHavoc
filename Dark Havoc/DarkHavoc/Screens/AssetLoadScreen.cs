@@ -221,7 +221,7 @@ namespace DarkHavoc
                     color1 = color2;
 
                     // and generate a new color.
-                    color2 = GenerateRandomColorWithoutAlpha();
+                    color2 = GenerateRandomColor();
 
                     // and reset.
                     fadeValue = 0.0f;

@@ -63,7 +63,10 @@ namespace DarkHavoc
         public override void Update(GameTime gameTime, bool otherScreenHasFocus, bool coveredByOtherScreen)
         {
             // Update starfield.
-            starfield.Update(gameTime);
+			//starfield.Update(gameTime);
+
+			// Update snowfall.
+			snowfall.Update(gameTime);
         }
 
         public override void Draw(GameTime gameTime)
