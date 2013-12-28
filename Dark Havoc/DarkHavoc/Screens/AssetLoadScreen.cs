@@ -69,7 +69,7 @@ namespace DarkHavoc
             myColor = Color.White;
 
             // Set the second color to a random color.
-            color2 = GenerateRandomColor();
+			color2 = GenerateRandomColorWithoutAlpha();
 
             // This BackgroundWorker will be responsible for loading the assets and doing other initialization steps on a separate thread.
             bgWorker = new BackgroundWorker();
@@ -135,7 +135,7 @@ namespace DarkHavoc
             }
 
             // Random loading text. Let's make it interesting!
-            switch (random.NextInt(0, 15))
+			switch (random.NextInt(0, 17))
             {
                 case 0:
                     loadingText = "Loading... ";
@@ -182,6 +182,9 @@ namespace DarkHavoc
                 case 14:
                     loadingText = "Going bowling with Roman... ";
                     break;
+				case 15:
+					loadingText = "wow very loading such fun wow ";
+					break;
             }
         }
 
@@ -218,7 +221,7 @@ namespace DarkHavoc
                     color1 = color2;
 
                     // and generate a new color.
-                    color2 = GenerateRandomColor();
+					color2 = GenerateRandomColorWithoutAlpha();
 
                     // and reset.
                     fadeValue = 0.0f;

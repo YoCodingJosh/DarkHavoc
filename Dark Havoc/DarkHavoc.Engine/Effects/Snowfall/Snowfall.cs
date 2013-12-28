@@ -128,6 +128,8 @@ namespace DarkHavoc.Engine.Effects
 		public float Rotation;
 		public byte Direction;
 		public float RotationSpeed;
+		public float Scale;
+		public byte Speed;
 		public Vector2 Origin;
 		private JoshoRandom random;
 
@@ -153,6 +155,16 @@ namespace DarkHavoc.Engine.Effects
 			this.Rotation = (float)random.NextDouble();
 			this.RotationSpeed = (float)random.NextDouble();
 			this.Origin = new Vector2(random.NextInt(0, 5), random.NextInt(0, 5));
+			this.Scale = (float)(random.NextInt(0, 2) == random.NextInt(0, 2) ? random.NextDouble() : (random.NextInt(0, 2) == random.NextInt(0, 2) ? random.NextDouble() + 1 : random.NextDouble() + 3));
+
+			if (this.Scale > 1.0f)
+				this.Speed = 3;
+			else if (this.Scale > 1.75f)
+				this.Speed = 4;
+			else if (this.Scale < 1.0f)
+				this.Speed = 1;
+			else
+				this.Speed = 2;
 		}
 	}
 
@@ -253,7 +265,7 @@ namespace DarkHavoc.Engine.Effects
 
 				particle.Rotation += elapsed * circle;
 
-				particle.Position.Y += 2;
+				particle.Position.Y += particle.Speed;
 
 				if (particle.Position.Y >= this.quitPoint.Y)
 				{
@@ -273,7 +285,7 @@ namespace DarkHavoc.Engine.Effects
 
 				Rectangle particleRect = new Rectangle(particle.Position.X, particle.Position.Y, this.snowTexture.Width, this.snowTexture.Height);
 
-				spriteBatch.Draw(this.snowTexture, particleRect, null, Color.White, particle.Rotation, particle.Origin, SpriteEffects.None, 0f);
+				spriteBatch.Draw(this.snowTexture, new Vector2(particle.Position.X, particle.Position.Y), null, Color.White, particle.Rotation, particle.Origin, particle.Scale, SpriteEffects.None, 0f);
 			}
 		}
 	}

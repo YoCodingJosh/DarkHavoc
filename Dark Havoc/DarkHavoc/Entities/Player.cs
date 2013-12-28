@@ -37,27 +37,32 @@ namespace DarkHavoc
             int playerIndex = (int)controllingPlayer.Value;
 
             KeyboardState keyboardState = input.CurrentKeyboardStates[playerIndex];
-            GamePadState gamePadState = input.CurrentGamePadStates[playerIndex];
+			GamePadState gamePadState = input.CurrentGamePadStates[playerIndex];
 
-            if (keyboardState.IsKeyDown(Keys.Left))
+			if (keyboardState.IsKeyDown(Keys.Left) || gamePadState.IsButtonDown(Buttons.DPadLeft))
             {
                 Position.X -= Speed;
             }
 
-            if (keyboardState.IsKeyDown(Keys.Right))
+			if (keyboardState.IsKeyDown(Keys.Right) || gamePadState.IsButtonDown(Buttons.DPadRight) )
             {
                 Position.X += Speed;
             }
 
-            if (keyboardState.IsKeyDown(Keys.Up))
+			if (keyboardState.IsKeyDown(Keys.Up) || gamePadState.IsButtonDown(Buttons.DPadUp))
             {
                 Position.Y -= Speed;
             }
 
-            if (keyboardState.IsKeyDown(Keys.Down))
+			if (keyboardState.IsKeyDown(Keys.Down) || gamePadState.IsButtonDown(Buttons.DPadDown))
             {
                 Position.Y += Speed;
             }
+
+			Vector2 thumbstick = gamePadState.ThumbSticks.Left * Speed;
+
+			this.Position.X += thumbstick.X;
+			this.Position.Y -= thumbstick.Y;
         }
 
         public void UpdateClamp(float top, float bottom, float left, float right)

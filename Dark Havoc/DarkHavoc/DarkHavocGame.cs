@@ -179,7 +179,7 @@ namespace DarkHavoc
 
             // Does the options file exist?
 			if (File.Exists(location + "Settings.josho"))
-                Options.DeserializeToObject(out GameOptions); // If so then deserialize it!
+				Options.DeserializeToObject(location, out GameOptions); // If so then deserialize it!
             else
             {
 #if WINDOWS

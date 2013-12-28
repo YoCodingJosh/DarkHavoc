@@ -21,6 +21,10 @@ namespace DarkHavoc
     /// </summary>
     class MenuBackgroundScreen : GameScreen
     {
+		// For managing our Christmas theme.
+		DateTime currentDate;
+		public static bool IsChristmas;
+
         // Our starfield.
         Starfield starfield;
 
@@ -58,15 +62,27 @@ namespace DarkHavoc
 
 			// Initialize it.
 			snowfall.Initialize();
+
+			currentDate = DateTime.Now;
+
+			if (currentDate.Month == 12 && (currentDate.Day == 24 || currentDate.Day == 25))
+			{
+				IsChristmas = true;
+			}
         }
 
         public override void Update(GameTime gameTime, bool otherScreenHasFocus, bool coveredByOtherScreen)
         {
-            // Update starfield.
-			//starfield.Update(gameTime);
-
-			// Update snowfall.
-			snowfall.Update(gameTime);
+			if (IsChristmas)
+			{
+				// Update snowfall.
+				snowfall.Update(gameTime);
+			}
+			else
+			{
+				// Update starfield.
+				starfield.Update(gameTime);
+			}
         }
 
         public override void Draw(GameTime gameTime)
@@ -78,8 +94,10 @@ namespace DarkHavoc
             spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.Additive);
 
             // Draw Starfield.
-			//starfield.Draw(spriteBatch, gameTime);
-			snowfall.Draw(spriteBatch);
+			if (!IsChristmas)
+				starfield.Draw(spriteBatch, gameTime);
+			else
+				snowfall.Draw(spriteBatch);
 
             // End SpriteBatch.
             spriteBatch.End();

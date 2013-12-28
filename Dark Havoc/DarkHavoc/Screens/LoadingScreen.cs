@@ -138,19 +138,19 @@ namespace DarkHavoc
             // to bother drawing the message.
             if (loadingIsSlow)
             {
-                SpriteBatch spriteBatch = ScreenManager.SpriteBatch;
+				//SpriteBatch spriteBatch = ScreenManager.SpriteBatch;
                 //SpriteFont font = Assets.loadingFont;
 
                 //const string message = "Loading...";
 
                 // Center the text in the viewport.
-                Viewport viewport = ScreenManager.GraphicsDevice.Viewport;
-                Vector2 viewportSize = new Vector2(viewport.Width, viewport.Height);
+				//Viewport viewport = ScreenManager.GraphicsDevice.Viewport;
+				//Vector2 viewportSize = new Vector2(viewport.Width, viewport.Height);
                 //Vector2 textSize = font.MeasureString(message);
                 //Vector2 textPosition = (viewportSize - textSize) / 2;
-                Rectangle fullscreen = new Rectangle(0, 0, viewport.Width, viewport.Height);
+				//Rectangle fullscreen = new Rectangle(0, 0, viewport.Width, viewport.Height);
 
-                Color color = Color.White * TransitionAlpha;
+				//Color color = Color.White * TransitionAlpha;
 
                 // Draw the text.
                 //spriteBatch.Begin();

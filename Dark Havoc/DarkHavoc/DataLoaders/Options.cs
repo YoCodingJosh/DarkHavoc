@@ -101,10 +101,10 @@ namespace DarkHavoc
             fs.Dispose();
         }
 
-        public static void DeserializeToObject(out Options options)
+		public static void DeserializeToObject(string location, out Options options)
         {
             BinaryFormatter bf = new BinaryFormatter();
-            FileStream fs = new FileStream("./Settings.josho", FileMode.Open);
+			FileStream fs = new FileStream(location + "Settings.josho", FileMode.Open);
 
             options = (Options)bf.Deserialize(fs);
 
