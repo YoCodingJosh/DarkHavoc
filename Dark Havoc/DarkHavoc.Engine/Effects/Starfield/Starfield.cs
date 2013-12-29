@@ -20,7 +20,7 @@ namespace DarkHavoc.Engine.Effects
     public class Starfield
     {
         // Array of stars, so we don't have to keep dynamically allocating memory.
-        Star[] stars = new Star[128];
+		Star[] stars = new Star[255];
         
         // Our random number generator. :)
         JoshoRandom rand = new JoshoRandom();
@@ -95,6 +95,14 @@ namespace DarkHavoc.Engine.Effects
             //int height = screenManager.Game.Window.ClientBounds.Height;
             //int left = screenManager.Game.Window.ClientBounds.Left;
             int left = 0;
+
+			if (this.screenWidth != this.screenManager.Game.Window.Size.Width || this.screenHeight != this.screenManager.Game.Window.Size.Height)
+			{
+				this.screenWidth = this.screenManager.Game.Window.Size.Width;
+				this.screenHeight = this.screenManager.Game.Window.Size.Height;
+
+				this.Initialize();
+			}
 
             for (int i = 0; i < stars.Length; i++)
             {
