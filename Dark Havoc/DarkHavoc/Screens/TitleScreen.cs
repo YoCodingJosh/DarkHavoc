@@ -55,7 +55,7 @@ namespace DarkHavoc
         public override void LoadContent()
         {
 			logoPosition = new Vector2(ScreenManager.GraphicsDevice.Viewport.TitleSafeArea.Center.X, ScreenManager.GraphicsDevice.Viewport.TitleSafeArea.Center.Y);
-            endPos = new Vector2(logoPosition.X, logoPosition.Y - 128);
+			endPos = new Vector2(logoPosition.X, ScreenManager.GraphicsDevice.Viewport.TitleSafeArea.Top + 232);
 
             //mainMenuMusic = JoshoEngine.MusicPlayer.LoadModule("./Resources/Music/kool-gro.xm");
         }
