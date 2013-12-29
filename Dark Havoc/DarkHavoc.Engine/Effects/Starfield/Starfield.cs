@@ -31,6 +31,9 @@ namespace DarkHavoc.Engine.Effects
         // Reference to the ScreenManager.
         ScreenManager screenManager;
 
+		// To auto resize if the screen size changes (toggling fullscreen).
+		private int screenWidth, screenHeight;
+
         /// <summary>
         /// Constructs a new starfield.
         /// </summary>
@@ -61,6 +64,9 @@ namespace DarkHavoc.Engine.Effects
         /// </summary>
         public void Initialize()
         {
+			this.screenWidth = this.screenManager.Game.Window.Size.Width;
+			this.screenHeight = this.screenManager.Game.Window.Size.Height;
+
             // Iterate through all the stars in the array.
             for (int i = 0; i < stars.Length; i++)
             {
