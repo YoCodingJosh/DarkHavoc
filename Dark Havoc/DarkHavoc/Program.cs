@@ -73,7 +73,7 @@ namespace DarkHavoc
 		{
 			Debug.WriteLine("[Dark Havoc] Exiting game...");
 			JoshoEngine.DestroyEngine(Program.gameInstance);
-			Debug.WriteLine("[Dark Havoc] Passing NSApplicationTerminateReply.Now to the OS. Good bye, I'll miss you!");
+			Debug.WriteLine("[Dark Havoc] Qutting.. Bye! :)");
 
 			return NSApplicationTerminateReply.Now;
 		}

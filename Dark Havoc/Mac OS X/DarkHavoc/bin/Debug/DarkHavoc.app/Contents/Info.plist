@@ -20,6 +20,8 @@
 	<string>NSApplication</string>
 	<key>CFBundleName</key>
 	<string>Dark Havoc</string>
+	<key>LSMultipleInstancesProhibited</key>
+	<true/>
 	<key>BuildMachineOSBuild</key>
 	<string>13B42</string>
 	<key>CFBundleDevelopmentRegion</key>
