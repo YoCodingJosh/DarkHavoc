@@ -59,10 +59,10 @@ namespace DarkHavoc
                 Position.Y += Speed;
             }
 
-			Vector2 thumbstick = gamePadState.ThumbSticks.Left * Speed;
+			Vector2 thumbstick = gamePadState.ThumbSticks.Left;
 
-			this.Position.X += thumbstick.X;
-			this.Position.Y -= thumbstick.Y;
+			this.Position.X += thumbstick.X * this.Speed;
+			this.Position.Y -= thumbstick.Y * this.Speed;
         }
 
         public void Draw(SpriteBatch spriteBatch, GameTime gameTime)
