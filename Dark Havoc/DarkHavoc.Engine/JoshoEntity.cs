@@ -105,6 +105,12 @@ namespace DarkHavoc.Engine
             return HitTestPrecise(this, otherEntity);
         }
 
+		public void UpdateClamp(float top, float bottom, float left, float right)
+		{
+			this.Position.X = MathHelper.Clamp(this.Position.X, left + (this.MyTexture.Width / 2), right - (this.MyTexture.Width / 2));
+			this.Position.Y = MathHelper.Clamp(this.Position.Y, top + (this.MyTexture.Height / 2), bottom - (this.MyTexture.Height / 2));
+		}
+
         public static bool IntersectPixels(Rectangle rectangleA, Color[] dataA,
                                            Rectangle rectangleB, Color[] dataB)
         {

@@ -65,12 +65,6 @@ namespace DarkHavoc
 			this.Position.Y -= thumbstick.Y;
         }
 
-        public void UpdateClamp(float top, float bottom, float left, float right)
-        {
-            Position.X = MathHelper.Clamp(this.Position.X, left + (this.MyTexture.Width / 2), right - (this.MyTexture.Width / 2));
-            Position.Y = MathHelper.Clamp(this.Position.Y, top + (this.MyTexture.Height / 2), bottom - (this.MyTexture.Height / 2));
-        }
-
         public void Draw(SpriteBatch spriteBatch, GameTime gameTime)
         {
             spriteBatch.Draw(MyTexture, Position, null, Color.White, 0f, this.TextureCenter, 1.0f, SpriteEffects.None, 0f);
