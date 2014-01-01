@@ -64,8 +64,13 @@ namespace DarkHavoc.Engine.Effects
         /// </summary>
         public void Initialize()
         {
+#if MONOMAC
 			this.screenWidth = this.screenManager.Game.Window.Size.Width;
 			this.screenHeight = this.screenManager.Game.Window.Size.Height;
+#else
+            this.screenWidth = this.screenManager.GraphicsDevice.Viewport.TitleSafeArea.Width;
+            this.screenHeight = this.screenManager.GraphicsDevice.Viewport.TitleSafeArea.Height;
+#endif
 
             // Iterate through all the stars in the array.
             for (int i = 0; i < stars.Length; i++)
@@ -96,6 +101,7 @@ namespace DarkHavoc.Engine.Effects
             //int left = screenManager.Game.Window.ClientBounds.Left;
             int left = 0;
 
+#if MONOMAC
 			if (this.screenWidth != this.screenManager.Game.Window.Size.Width || this.screenHeight != this.screenManager.Game.Window.Size.Height)
 			{
 				this.screenWidth = this.screenManager.Game.Window.Size.Width;
@@ -103,6 +109,15 @@ namespace DarkHavoc.Engine.Effects
 
 				this.Initialize();
 			}
+#else
+            if (this.screenWidth != this.screenManager.GraphicsDevice.Viewport.TitleSafeArea.Width || this.screenHeight != this.screenManager.GraphicsDevice.Viewport.TitleSafeArea.Height)
+            {
+                this.screenWidth = this.screenManager.GraphicsDevice.Viewport.TitleSafeArea.Width;
+                this.screenHeight = this.screenManager.GraphicsDevice.Viewport.TitleSafeArea.Height;
+
+                this.Initialize();
+            }
+#endif
 
             for (int i = 0; i < stars.Length; i++)
             {

@@ -139,7 +139,7 @@ namespace DarkHavoc
 #if MONOMAC
 			Program.gameInstance.CenterWindow();
 #elif WINDOWS
-			this.Window.SetPosition(GetCenterOfScreen(graphics));
+			Program.gameInstance.Window.SetPosition(GetCenterOfScreen(graphics));
 #endif
 
 			graphics.ApplyChanges();

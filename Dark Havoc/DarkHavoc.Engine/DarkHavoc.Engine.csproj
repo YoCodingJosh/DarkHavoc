@@ -86,7 +86,7 @@
     <Compile Include="Effects\Lightning\ILightning.cs" />
     <Compile Include="Effects\Lightning\LightningBolt.cs" />
     <Compile Include="Effects\Lightning\LightningText.cs" />
-    <Compile Include="Effects\Snowfall.cs" />
+    <Compile Include="Effects\Snowfall\Snowfall.cs" />
     <Compile Include="Effects\Starfield\Star.cs" />
     <Compile Include="Effects\Starfield\Starfield.cs" />
     <Compile Include="GameScreen.cs" />
