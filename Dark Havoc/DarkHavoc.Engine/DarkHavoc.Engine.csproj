@@ -82,6 +82,8 @@
     <Compile Include="DataReaders\SpriteStripMetadata.cs" />
     <Compile Include="DataReaders\Credits.cs" />
     <Compile Include="DataReaders\IniFile.cs" />
+    <Compile Include="Dialogue\Conversation.cs" />
+    <Compile Include="Dialogue\Speaker.cs" />
     <Compile Include="Effects\Lightning\BranchLightning.cs" />
     <Compile Include="Effects\Lightning\ILightning.cs" />
     <Compile Include="Effects\Lightning\LightningBolt.cs" />
