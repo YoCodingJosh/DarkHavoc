@@ -28,3 +28,4 @@ Roadmap
 * Write the design document for Sony.
 * Remove unused code.
 * Map out Achievements/Trophies
+* Finish implementing RPG-style dialogue engine. Pretty crucial to Practice Mode.
