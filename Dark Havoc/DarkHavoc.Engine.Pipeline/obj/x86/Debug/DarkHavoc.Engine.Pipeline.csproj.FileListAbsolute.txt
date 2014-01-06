@@ -1,0 +1,4 @@
+C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\DarkHavoc.Engine.Pipeline\bin\x86\Debug\DarkHavoc.Engine.Pipeline.dll
+C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\DarkHavoc.Engine.Pipeline\bin\x86\Debug\DarkHavoc.Engine.Pipeline.pdb
+C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\DarkHavoc.Engine.Pipeline\obj\x86\Debug\DarkHavoc.Engine.Pipeline.dll
+C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\DarkHavoc.Engine.Pipeline\obj\x86\Debug\DarkHavoc.Engine.Pipeline.pdb

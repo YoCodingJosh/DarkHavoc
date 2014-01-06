@@ -95,13 +95,13 @@ namespace DarkHavoc.Engine.DataReaders
                 MajorTasks.Add(majorTask);
             }
 
-            var specialThanksDescendants = creditsRoot.Descendants("SpecialThanks");
+            var specialThanksDescendants = creditsRoot.Descendants("SpecialThanks").Descendants("Thanks");
 
             List<string> specialThanksContents = new List<string>();
 
             foreach (var element in specialThanksDescendants)
             {
-                specialThanksContents.Add(element.Value);
+                specialThanksContents.Add(element.Attribute("ToWho").Value);
             }
 
             SpecialThanks = new CreditsSpecialThanks(specialThanksContents);

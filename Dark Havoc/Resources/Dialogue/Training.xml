@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+  Training.xml - Dialogue for the Practice Mode.
+  Created by Josh Kennedy on 4 January 2014
+  
+  Dark Havoc
+  Copyright (C) 2014 Joshua Kennedy. All rights reserved.
+  -->
+
+<XnaContent xmlns:Generic="System.Collections.Generic">
+  <Asset Type="Generic:List[DarkHavoc.Engine.Pipeline.Speaker]">
+    <Item>
+      <Message>Welcome to Dark Havoc!</Message>
+      <AvatarName>???</AvatarName>
+      <Choices Null="true" />
+      <ChoicesPrompt Null="true" />
+    </Item>
+  </Asset>
+</XnaContent>

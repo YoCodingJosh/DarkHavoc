@@ -12,6 +12,9 @@ Resources\Images\NotificationHighlight.xnb
 Resources\Sprites\PlayerShip.xnb
 Resources\Sprites\HomingMissile.xnb
 Resources\Animations\MissileExplosion.xnb
+Resources\Sprites\Snowflake.xnb
+Resources\Sprites\DialogueBorder.xnb
+Resources\Sprites\ConversationContinue.xnb
 Resources\Fonts\ConsoleFont.xnb
 Resources\Fonts\DialogFont.xnb
 Resources\Fonts\DialogTitleFont.xnb
@@ -20,7 +23,8 @@ Resources\Fonts\MenuFont.xnb
 Resources\Fonts\CreditsSubtitleFont.xnb
 Resources\Fonts\CreditsMajorTaskFont.xnb
 Resources\Fonts\CreditsTaskAuthorFont.xnb
-Resources\Sprites\Snowflake.xnb
+Resources\Dialogue\Training.xnb
+Resources\Fonts\ConversationDialogueFont.xnb
 Resources\Animations\MissileExplosion.ini
 Resources\Animations\HDDACCESSINDICATOR.ini
 Resources\Effects\desaturate.mgfx

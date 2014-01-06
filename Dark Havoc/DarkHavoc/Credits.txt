@@ -60,5 +60,8 @@ Special Thanks
 ======
 
 Sony Computer Entertainment America
-My Family
+MonoGame Developers
+StackOverflow
+Reddit
+My Family and Friends
 You, the player!!

@@ -83,7 +83,6 @@
     <Compile Include="DataReaders\Credits.cs" />
     <Compile Include="DataReaders\IniFile.cs" />
     <Compile Include="Dialogue\Conversation.cs" />
-    <Compile Include="Dialogue\Speaker.cs" />
     <Compile Include="Effects\Lightning\BranchLightning.cs" />
     <Compile Include="Effects\Lightning\ILightning.cs" />
     <Compile Include="Effects\Lightning\LightningBolt.cs" />
@@ -109,6 +108,10 @@
     <ProjectReference Include="..\AssetLoader\AssetLoader.csproj">
       <Project>{B6380A86-8D09-4515-ADE8-8165E9E2C2ED}</Project>
       <Name>AssetLoader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DarkHavoc.Engine.Pipeline\DarkHavoc.Engine.Pipeline.csproj">
+      <Project>{27719387-6E24-43CE-B2E9-5DDA742636B4}</Project>
+      <Name>DarkHavoc.Engine.Pipeline</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

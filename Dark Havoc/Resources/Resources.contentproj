@@ -165,6 +165,11 @@
       <Name>disappear</Name>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <Compile Include="Fonts\ConversationDialogueFont.spritefont">
+      <Name>ConversationDialogueFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
     <None Include="Music\alf2_zalza_edit.xm">
       <Name>alf2_zalza_edit</Name>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -206,6 +211,31 @@
       <Name>Snowflake</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\DialogueBorder.png">
+      <Name>DialogueBorder</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\ConversationContinue.png">
+      <Name>ConversationContinue</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DarkHavoc.Engine.Pipeline\DarkHavoc.Engine.Pipeline.csproj">
+      <Project>{27719387-6E24-43CE-B2E9-5DDA742636B4}</Project>
+      <Name>DarkHavoc.Engine.Pipeline</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dialogue\Training.xml">
+      <Name>Training</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />

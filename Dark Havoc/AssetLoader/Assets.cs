@@ -8,6 +8,7 @@ using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
+using DarkHavoc.Engine.Pipeline;
 
 namespace AssetLoader
 {
@@ -26,12 +27,13 @@ namespace AssetLoader
         public static Texture2D darkHavocLogo;
 
         // Fonts
-        public static SpriteFont dialogFont;
+        public static SpriteFont dialogBoxFont;
         public static SpriteFont consoleFont;
         public static SpriteFont menuFont;
         public static SpriteFont creditsSubtitleFont;
         public static SpriteFont creditsMajorTaskFont;
         public static SpriteFont creditsTaskAuthorFont;
+        public static SpriteFont conversationDialogueFont;
 
         // Effects
         public static Effect disappearEffect;
@@ -44,10 +46,15 @@ namespace AssetLoader
         public static Texture2D playerShipTexture;
         public static Texture2D enemyMissileTexture;
 		public static Texture2D snowflakeTexture;
+        public static Texture2D continueConversationTexture;
+        public static Texture2D conversationBoxBorderTexture;
 
         // Animations
         public static Texture2D fileAccessAnimationTexture;
         public static Texture2D missileExplosionAnimationTexture; // Actually is spritesheet
+
+        // Dialogues
+        public static List<Speaker> trainingDialogue;
 
         /// <summary>
         /// Loads up all of the assets synchrously.
@@ -67,12 +74,13 @@ namespace AssetLoader
                 darkHavocLogo = content.Load<Texture2D>("./Images/DarkHavocLogo");
 
                 // Fonts
-                dialogFont = content.Load<SpriteFont>("./Fonts/DialogFont");
+                dialogBoxFont = content.Load<SpriteFont>("./Fonts/DialogFont");
                 consoleFont = content.Load<SpriteFont>("./Fonts/ConsoleFont");
                 menuFont = content.Load<SpriteFont>("./Fonts/MenuFont");
                 creditsSubtitleFont = content.Load<SpriteFont>("./Fonts/CreditsSubtitleFont");
                 creditsMajorTaskFont = content.Load<SpriteFont>("./Fonts/CreditsMajorTaskFont");
                 creditsTaskAuthorFont = content.Load<SpriteFont>("./Fonts/CreditsTaskAuthorFont");
+                conversationDialogueFont = content.Load<SpriteFont>("./Fonts/ConversationDialogueFont");
 
                 // Effects
                 disappearEffect = content.Load<Effect>("./Effects/disappear.mgfx");
@@ -85,10 +93,15 @@ namespace AssetLoader
                 playerShipTexture = content.Load<Texture2D>("./Sprites/PlayerShip");
                 enemyMissileTexture = content.Load<Texture2D>("./Sprites/HomingMissile");
 				snowflakeTexture = content.Load<Texture2D>("./Sprites/Snowflake");
+                continueConversationTexture = content.Load<Texture2D>("./Sprites/ConversationContinue");
+                conversationBoxBorderTexture = content.Load<Texture2D>("./Sprites/DialogueBorder");
 
                 // Animations
                 fileAccessAnimationTexture = content.Load<Texture2D>("./Animations/HDDACCESSINDICATOR");
                 missileExplosionAnimationTexture = content.Load<Texture2D>("./Animations/MissileExplosion");
+
+                // Dialogues
+                trainingDialogue = content.Load<List<Speaker>>("./Dialogue/Training");
 
                 // Finalization
                 isLoaded = true;

@@ -35,6 +35,8 @@ namespace DarkHavoc.Engine.Screens
 
         Vector2 centerOfScreen;
 
+        bool isSpecialThanks;
+
         /// <summary>
         /// Event raised when the credits have ended, or the user has ended it.
         /// </summary>
@@ -93,6 +95,8 @@ namespace DarkHavoc.Engine.Screens
 
             isOff = false;
 
+            isSpecialThanks = false;
+
             Debug.WriteLine("[JoshoEngine] Credits loaded.");
         }
 
@@ -139,7 +143,10 @@ namespace DarkHavoc.Engine.Screens
                 }
                 else
                 {
-                    CreditsMajorTask majorTask = credits.MajorTasks[currentCredits];
+                    CreditsMajorTask majorTask = null;
+
+                    if (!isSpecialThanks)
+                        majorTask = credits.MajorTasks[currentCredits];
 
                     float elapsed = (float)gameTime.ElapsedGameTime.TotalSeconds;
 
@@ -152,15 +159,21 @@ namespace DarkHavoc.Engine.Screens
 
                         currentTask++;
 
-                        if (currentTask >= majorTask.Tasks.Count)
+                        if (!isSpecialThanks && currentTask >= majorTask.Tasks.Count)
                         {
                             currentTask = 0;
                             currentCredits++;
 
-                            if (currentCredits >= credits.MajorTasks.Count)
+                            if (currentCredits >= credits.MajorTasks.Count && !isSpecialThanks)
                             {
-                                creditsFinished = true;
+                                currentCredits = 0;
+                                isSpecialThanks = true;
                             }
+                        }
+
+                        if (isSpecialThanks && currentTask >= credits.SpecialThanks.Thanks.Count)
+                        {
+                            creditsFinished = true;
                         }
                     }
                 }
@@ -205,21 +218,51 @@ namespace DarkHavoc.Engine.Screens
                 }
                 else
                 {
-                    CreditsMajorTask majorTask = credits.MajorTasks[currentCredits];
-                    currentMajorTask = majorTask.Name;
-                    currentTaskTitle = majorTask.Tasks[currentTask].Title;
-                    currentTaskPerson = majorTask.Tasks[currentTask].Name;
+                    string specialThank = null;
+                    if (!isSpecialThanks)
+                    {
+                        CreditsMajorTask majorTask = credits.MajorTasks[currentCredits];
+                        currentMajorTask = majorTask.Name;
+                        currentTaskTitle = majorTask.Tasks[currentTask].Title;
+                        currentTaskPerson = majorTask.Tasks[currentTask].Name;
+                    }
+                    else
+                    {
+                        specialThank = credits.SpecialThanks.Thanks[currentTask];
+                    }
 
-                    Vector2 majorTaskCenter = new Vector2(centerOfScreen.X - (Assets.creditsSubtitleFont.MeasureString(currentMajorTask).X / 2), centerOfScreen.Y - Assets.creditsSubtitleFont.Spacing - 100);
-                    Vector2 taskTitleCenter = new Vector2(centerOfScreen.X - (Assets.creditsMajorTaskFont.MeasureString(currentTaskTitle).X / 2), centerOfScreen.Y - Assets.creditsMajorTaskFont.Spacing - Assets.creditsSubtitleFont.Spacing - 33);
-                    Vector2 taskPersonCenter = new Vector2(centerOfScreen.X - (Assets.creditsTaskAuthorFont.MeasureString(currentTaskPerson).X / 2), centerOfScreen.Y - Assets.creditsTaskAuthorFont.Spacing + Assets.creditsMajorTaskFont.Spacing);
+                    Vector2 majorTaskCenter = Vector2.Zero;
+                    Vector2 taskTitleCenter = Vector2.Zero;
+                    Vector2 taskPersonCenter = Vector2.Zero;
 
-                    spriteBatch.DrawString(Assets.creditsSubtitleFont, currentMajorTask, majorTaskCenter, Color.White);
+                    if (!isSpecialThanks)
+                    {
+                        majorTaskCenter = new Vector2(centerOfScreen.X - (Assets.creditsSubtitleFont.MeasureString(currentMajorTask).X / 2), centerOfScreen.Y - Assets.creditsSubtitleFont.Spacing - 100);
+                        taskTitleCenter = new Vector2(centerOfScreen.X - (Assets.creditsMajorTaskFont.MeasureString(currentTaskTitle).X / 2), centerOfScreen.Y - Assets.creditsMajorTaskFont.Spacing - Assets.creditsSubtitleFont.Spacing - 33);
+                        taskPersonCenter = new Vector2(centerOfScreen.X - (Assets.creditsTaskAuthorFont.MeasureString(currentTaskPerson).X / 2), centerOfScreen.Y - Assets.creditsTaskAuthorFont.Spacing + Assets.creditsMajorTaskFont.Spacing);
+                    }
+                    else
+                    {
+                        majorTaskCenter = new Vector2(centerOfScreen.X - (Assets.creditsSubtitleFont.MeasureString("Special Thanks").X / 2), centerOfScreen.Y - Assets.creditsSubtitleFont.Spacing - 100);
+                        taskTitleCenter = new Vector2(centerOfScreen.X - (Assets.creditsMajorTaskFont.MeasureString(specialThank).X / 2), centerOfScreen.Y - Assets.creditsMajorTaskFont.Spacing - 33);
+                    }
+
+                    if (!isSpecialThanks)
+                        spriteBatch.DrawString(Assets.creditsSubtitleFont, currentMajorTask, majorTaskCenter, Color.White);
+                    else
+                        spriteBatch.DrawString(Assets.creditsSubtitleFont, "Special Thanks", majorTaskCenter, Color.White);
 
                     if (!isOff)
                     {
-                        spriteBatch.DrawString(Assets.creditsMajorTaskFont, currentTaskTitle, taskTitleCenter, Color.White);
-                        spriteBatch.DrawString(Assets.creditsTaskAuthorFont, currentTaskPerson, taskPersonCenter, Color.White);
+                        if (!isSpecialThanks)
+                        {
+                            spriteBatch.DrawString(Assets.creditsMajorTaskFont, currentTaskTitle, taskTitleCenter, Color.White);
+                            spriteBatch.DrawString(Assets.creditsTaskAuthorFont, currentTaskPerson, taskPersonCenter, Color.White);
+                        }
+                        else
+                        {
+                            spriteBatch.DrawString(Assets.creditsMajorTaskFont, specialThank, taskTitleCenter, Color.White);
+                        }
                     }
                 }
             }

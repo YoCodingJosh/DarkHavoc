@@ -36,7 +36,7 @@ namespace DarkHavoc
         public override void LoadContent()
         {
             player = new Player(Assets.playerShipTexture, new Vector2(100, 100));
-            missile = new HomingMissile(Assets.enemyMissileTexture, new Vector2(666, 250));
+            missile = new HomingMissile(Assets.enemyMissileTexture, new Vector2(666, 666));
             missile.Destination = player.Origin;
             Debug.WriteLine("[Dark Havoc] Practice Mode has started!");
         }

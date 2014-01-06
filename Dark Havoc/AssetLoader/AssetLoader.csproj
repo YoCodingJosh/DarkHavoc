@@ -62,6 +62,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DarkHavoc.Engine.Pipeline\DarkHavoc.Engine.Pipeline.csproj">
+      <Project>{27719387-6E24-43CE-B2E9-5DDA742636B4}</Project>
+      <Name>DarkHavoc.Engine.Pipeline</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Resources\Resources.contentproj">
       <Project>{E08D69FA-CCFB-446B-9C28-FFEBB2BF3C74}</Project>
       <Name>Resources</Name>

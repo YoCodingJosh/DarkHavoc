@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarkHavoc", "DarkHavoc\Dark
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resources", "Resources\Resources.contentproj", "{E08D69FA-CCFB-446B-9C28-FFEBB2BF3C74}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarkHavoc.Engine.Pipeline", "DarkHavoc.Engine.Pipeline\DarkHavoc.Engine.Pipeline.csproj", "{27719387-6E24-43CE-B2E9-5DDA742636B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +44,14 @@ Global
 		{E08D69FA-CCFB-446B-9C28-FFEBB2BF3C74}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{E08D69FA-CCFB-446B-9C28-FFEBB2BF3C74}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{E08D69FA-CCFB-446B-9C28-FFEBB2BF3C74}.Release|x86.ActiveCfg = Debug|Any CPU
+		{27719387-6E24-43CE-B2E9-5DDA742636B4}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{27719387-6E24-43CE-B2E9-5DDA742636B4}.Debug|Any CPU.Build.0 = Debug|x86
+		{27719387-6E24-43CE-B2E9-5DDA742636B4}.Debug|x86.ActiveCfg = Debug|x86
+		{27719387-6E24-43CE-B2E9-5DDA742636B4}.Debug|x86.Build.0 = Debug|x86
+		{27719387-6E24-43CE-B2E9-5DDA742636B4}.Release|Any CPU.ActiveCfg = Debug|x86
+		{27719387-6E24-43CE-B2E9-5DDA742636B4}.Release|Any CPU.Build.0 = Debug|x86
+		{27719387-6E24-43CE-B2E9-5DDA742636B4}.Release|x86.ActiveCfg = Debug|x86
+		{27719387-6E24-43CE-B2E9-5DDA742636B4}.Release|x86.Build.0 = Debug|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

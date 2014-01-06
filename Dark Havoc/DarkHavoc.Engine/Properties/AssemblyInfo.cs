@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 [assembly: AssemblyTitle("Dark Havoc Engine")]
 [assembly: AssemblyProduct("Dark Havoc")]
-[assembly: AssemblyDescription("Dark Havoc 2D Engine")]
+[assembly: AssemblyDescription("Dark Havoc 2D Game Engine")]
 [assembly: AssemblyCompany("Joshua Kennedy")]
 [assembly: AssemblyCopyright("Copyright © Joshua Kennedy 2011-2013")]
 [assembly: AssemblyTrademark("")]

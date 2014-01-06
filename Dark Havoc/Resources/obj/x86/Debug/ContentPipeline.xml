@@ -128,6 +128,33 @@
       <Time>2013-12-25T11:48:43.7593864-06:00</Time>
     </Item>
     <Item>
+      <Source>Sprites\Snowflake.png</Source>
+      <Name>Sprites\Snowflake</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\AssetLoader\bin\x86\Debug\Resources\Sprites\Snowflake.xnb</Output>
+      <Time>2013-12-25T11:48:44.0693828-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\DialogueBorder.png</Source>
+      <Name>Sprites\DialogueBorder</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\AssetLoader\bin\x86\Debug\Resources\Sprites\DialogueBorder.xnb</Output>
+      <Time>2014-01-04T19:41:03.7269358-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\ConversationContinue.png</Source>
+      <Name>Sprites\ConversationContinue</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\AssetLoader\bin\x86\Debug\Resources\Sprites\ConversationContinue.xnb</Output>
+      <Time>2014-01-04T19:41:03.7249353-06:00</Time>
+    </Item>
+    <Item>
       <Source>Fonts\ConsoleFont.spritefont</Source>
       <Name>Fonts\ConsoleFont</Name>
       <Importer>FontDescriptionImporter</Importer>
@@ -200,13 +227,22 @@
       <Time>2013-12-25T11:48:43.7979857-06:00</Time>
     </Item>
     <Item>
-      <Source>Sprites\Snowflake.png</Source>
-      <Name>Sprites\Snowflake</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
+      <Source>Dialogue\Training.xml</Source>
+      <Name>Dialogue\Training</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\AssetLoader\bin\x86\Debug\Resources\Sprites\Snowflake.xnb</Output>
-      <Time>2013-12-25T11:48:44.0693828-06:00</Time>
+      <Output>C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\AssetLoader\bin\x86\Debug\Resources\Dialogue\Training.xnb</Output>
+      <Time>2014-01-04T20:19:36.9567673-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\ConversationDialogueFont.spritefont</Source>
+      <Name>Fonts\ConversationDialogueFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\AssetLoader\bin\x86\Debug\Resources\Fonts\ConversationDialogueFont.xnb</Output>
+      <Time>2014-01-05T17:14:51.0402977-06:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -243,6 +279,10 @@
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
         <Value>2010-08-23T13:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\DarkHavoc.Engine.Pipeline\bin\x86\Debug\DarkHavoc.Engine.Pipeline.dll</Key>
+        <Value>2014-01-05T06:12:48.5780834-06:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>

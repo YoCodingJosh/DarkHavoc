@@ -87,6 +87,9 @@ namespace DarkHavoc
             // In case the user has a fast computer, the asset load screen won't just be a flicker.
             Thread.Sleep(1000);
 
+            // Collect Garbage.
+            GC.Collect();
+
 			// Our magic method. This loads the assets into memsory.
             Assets.StartCache(ScreenManager.Game.Content);
 
@@ -135,7 +138,7 @@ namespace DarkHavoc
             }
 
             // Random loading text. Let's make it interesting!
-			switch (random.NextInt(0, 17))
+			switch (random.NextInt(0, 18))
             {
                 case 0:
                     loadingText = "Loading... ";
@@ -168,7 +171,7 @@ namespace DarkHavoc
                     loadingText = "Performing magic... ";
                     break;
                 case 10:
-                    loadingText = "Browsing reddit... ";
+                    loadingText = "Browsing teh interwebz... ";
                     break;
                 case 11:
                     loadingText = "Eating some flies... ";
@@ -185,12 +188,13 @@ namespace DarkHavoc
 				case 15:
 					loadingText = "wow very loading such fun wow ";
 					break;
+                case 16:
+                    loadingText = "Building a GUI interface to track an IP... ";
+                    break;
+                case 17:
+                    loadingText = "You lookin' real fine! ;-) ";
+                    break;
             }
-        }
-
-        public override void UnloadContent()
-        {
-            GC.Collect();
         }
 
         public override void Update(GameTime gameTime, bool otherScreenHasFocus, bool coveredByOtherScreen)

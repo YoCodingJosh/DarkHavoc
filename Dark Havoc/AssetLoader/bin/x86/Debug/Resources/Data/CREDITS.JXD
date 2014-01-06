@@ -33,22 +33,24 @@ Copyright 2011-2013 Joshua Kennedy.
     <Task Title="Big Enchilada" Name="Joshua Kennedy" />
   </MajorTask>
 
+  <!--
+  *** WE NEED BETTER MUSIC ***
   <MajorTask Title="Music">
     <Task Title="Credits Music" Name="One by betrayer" />
     <Task Title="Main Menu Music" Name="Kool-GroOve" />
   </MajorTask>
+  -->
 
   <MajorTask Title="3rd Party Libraries">
     <Task Title="MonoGame" Name="http://www.monogame.net/" />
   </MajorTask>
 
   <SpecialThanks>
-    <Thanks>Sony Computer Entertainment America</Thanks>
-    <Thanks>Steve Groll</Thanks>
-    <Thanks>Xamarin</Thanks>
-    <Thanks>MonoGame Developers</Thanks>
-    <Thanks>Russ Hanna</Thanks>
-    <Thanks>My Family</Thanks>
-    <Thanks>You, the player!</Thanks>
+    <Thanks ToWho="Sony Computer Entertainment America" />
+    <Thanks ToWho="MonoGame Developers" />
+    <Thanks ToWho="StackOverflow" />
+    <Thanks ToWho="Reddit" />
+    <Thanks ToWho="My Family and Friends" />
+    <Thanks ToWho="and most importantly You!" />
   </SpecialThanks>
 </JoshoCredits>
