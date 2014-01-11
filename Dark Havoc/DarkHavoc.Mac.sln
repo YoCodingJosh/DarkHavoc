@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lidgren.Network.MacOS", "..
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetLoader", "Mac OS X\AssetLoader\AssetLoader.csproj", "{E09AFBB6-065A-4C7A-814C-F45271928E6E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarkHavoc.Engine.Pipeline", "Mac OS X\DarkHavoc.Engine.Pipeline\DarkHavoc.Engine.Pipeline.csproj", "{125992F9-C868-4112-A937-B967FF8C5D63}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -19,6 +21,14 @@ Global
 		Distribution|Any CPU = Distribution|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{125992F9-C868-4112-A937-B967FF8C5D63}.AppStore|Any CPU.ActiveCfg = Release|Any CPU
+		{125992F9-C868-4112-A937-B967FF8C5D63}.AppStore|Any CPU.Build.0 = Release|Any CPU
+		{125992F9-C868-4112-A937-B967FF8C5D63}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{125992F9-C868-4112-A937-B967FF8C5D63}.Debug|x86.Build.0 = Debug|Any CPU
+		{125992F9-C868-4112-A937-B967FF8C5D63}.Distribution|Any CPU.ActiveCfg = Debug|Any CPU
+		{125992F9-C868-4112-A937-B967FF8C5D63}.Distribution|Any CPU.Build.0 = Debug|Any CPU
+		{125992F9-C868-4112-A937-B967FF8C5D63}.Release|x86.ActiveCfg = Release|Any CPU
+		{125992F9-C868-4112-A937-B967FF8C5D63}.Release|x86.Build.0 = Release|Any CPU
 		{36C538E6-C32A-4A8D-A39C-566173D7118E}.AppStore|Any CPU.ActiveCfg = Release|Any CPU
 		{36C538E6-C32A-4A8D-A39C-566173D7118E}.AppStore|Any CPU.Build.0 = Release|Any CPU
 		{36C538E6-C32A-4A8D-A39C-566173D7118E}.Debug|x86.ActiveCfg = Debug|Any CPU

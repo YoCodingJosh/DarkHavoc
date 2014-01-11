@@ -8,5 +8,7 @@
 /Users/joshuakennedy/Documents/DarkHavoc/Dark Havoc/Mac OS X/DarkHavoc.Engine/bin/Debug/MonoGame.Framework.dll
 /Users/joshuakennedy/Documents/DarkHavoc/Dark Havoc/Mac OS X/DarkHavoc.Engine/bin/Debug/AssetLoader.dll
 /Users/joshuakennedy/Documents/DarkHavoc/Dark Havoc/Mac OS X/DarkHavoc.Engine/bin/Debug/AssetLoader.dll.mdb
+/Users/joshuakennedy/Documents/DarkHavoc/Dark Havoc/Mac OS X/DarkHavoc.Engine/bin/Debug/DarkHavoc.Engine.Pipeline.dll
+/Users/joshuakennedy/Documents/DarkHavoc/Dark Havoc/Mac OS X/DarkHavoc.Engine/bin/Debug/DarkHavoc.Engine.Pipeline.dll.mdb
 /Users/joshuakennedy/Documents/DarkHavoc/Dark Havoc/Mac OS X/DarkHavoc.Engine/bin/Debug/Lidgren.Network.dll
 /Users/joshuakennedy/Documents/DarkHavoc/Dark Havoc/Mac OS X/DarkHavoc.Engine/bin/Debug/Lidgren.Network.dll.mdb

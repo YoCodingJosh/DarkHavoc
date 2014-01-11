@@ -158,5 +158,9 @@
       <Project>{E09AFBB6-065A-4C7A-814C-F45271928E6E}</Project>
       <Name>AssetLoader</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DarkHavoc.Engine.Pipeline\DarkHavoc.Engine.Pipeline.csproj">
+      <Project>{125992F9-C868-4112-A937-B967FF8C5D63}</Project>
+      <Name>DarkHavoc.Engine.Pipeline</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

@@ -48,5 +48,9 @@
       <Project>{36C538E6-C32A-4A8D-A39C-566173D7118E}</Project>
       <Name>MonoGame.Framework.MacOS</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DarkHavoc.Engine.Pipeline\DarkHavoc.Engine.Pipeline.csproj">
+      <Project>{125992F9-C868-4112-A937-B967FF8C5D63}</Project>
+      <Name>DarkHavoc.Engine.Pipeline</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

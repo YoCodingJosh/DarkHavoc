@@ -85,6 +85,8 @@
     <Folder Include="Properties\" />
     <Folder Include="Screens\" />
     <Folder Include="DataLoaders\" />
+    <Folder Include="Content\Data\" />
+    <Folder Include="Content\Dialogue\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\..\DarkHavoc\Entities\HomingMissile.cs">
@@ -185,10 +187,6 @@
     <BundleResource Include="Content\Animations\MissileExplosion.xnb">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </BundleResource>
-    <BundleResource Include="..\..\Resources\Data\CREDITS.JXD">
-      <Link>Content\Data\CREDITS.JXD</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </BundleResource>
     <BundleResource Include="..\..\Resources\Effects\desaturate.mgfx">
       <Link>Content\Effects\desaturate.mgfx</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -258,6 +256,21 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </BundleResource>
     <BundleResource Include="Content\Sprites\Snowflake.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Content\Fonts\ConversationDialogueFont.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Content\Data\CREDITS.JXD">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Content\Sprites\ConversationContinue.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Content\Sprites\DialogueBorder.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Content\Dialogue\Training.xnb">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </BundleResource>
   </ItemGroup>
