@@ -13,8 +13,9 @@
     <Item>
       <Message>Welcome to Dark Havoc!</Message>
       <AvatarName>???</AvatarName>
-      <Choices Null="true" />
       <ChoicesPrompt Null="true" />
+      <Choices Null="true" />
+      <RevealStyle>1</RevealStyle>
     </Item>
   </Asset>
 </XnaContent>

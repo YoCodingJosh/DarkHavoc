@@ -60,6 +60,9 @@ namespace AssetLoader
         /// Loads up all of the assets synchrously.
         /// </summary>
         /// <param name="content">Initialized ContentManager object.</param>
+        /// <remarks>
+        /// It is imperative to call this on a separate thread, as this will be a long operation and it will lock up the calling thread!
+        /// </remarks>
         public static void StartCache(ContentManager content)
         {
             Debug.WriteLine("[Asset Server] Loading Assets...");

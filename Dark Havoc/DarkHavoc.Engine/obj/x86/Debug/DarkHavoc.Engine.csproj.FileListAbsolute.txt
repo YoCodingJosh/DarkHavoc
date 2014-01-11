@@ -45,5 +45,5 @@ C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\DarkHavoc.Engine\bin\x86\Deb
 C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\DarkHavoc.Engine\bin\x86\Debug\Resources\Fonts\CreditsSubtitleFont.xnb
 C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\DarkHavoc.Engine\bin\x86\Debug\Resources\Fonts\CreditsMajorTaskFont.xnb
 C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\DarkHavoc.Engine\bin\x86\Debug\Resources\Fonts\CreditsTaskAuthorFont.xnb
-C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\DarkHavoc.Engine\bin\x86\Debug\Resources\Dialogue\Training.xnb
 C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\DarkHavoc.Engine\bin\x86\Debug\Resources\Fonts\ConversationDialogueFont.xnb
+C:\Users\Josh\Documents\GitHub\DarkHavoc\Dark Havoc\DarkHavoc.Engine\bin\x86\Debug\Resources\Dialogue\Training.xnb
