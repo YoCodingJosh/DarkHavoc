@@ -1,43 +1,17 @@
-﻿<Properties MonoDevelop.MonoMac.LastXamMacNagTime="12/30/2013 1:41:14 AM">
+﻿<Properties MonoDevelop.MonoMac.LastXamMacNagTime="12/31/2013 12:38:51 AM">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Distribution" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DarkHavoc/Screens/TitleScreen.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DarkHavoc/Entities/Player.cs">
     <Files>
-      <File FileName="DarkHavoc/DarkHavocGame.cs" Line="171" Column="20" />
-      <File FileName="DarkHavoc/Entities/Player.cs" Line="52" Column="86" />
-      <File FileName="DarkHavoc/Screens/MenuBackgroundScreen.cs" Line="75" Column="10" />
-      <File FileName="AssetLoader/Assets.cs" Line="69" Column="25" />
-      <File FileName="DarkHavoc/Screens/AssetLoadScreen.cs" Line="17" Column="19" />
-      <File FileName="DarkHavoc/Screens/OptionsMenuScreen.cs" Line="95" Column="57" />
-      <File FileName="DarkHavoc/Game/PracticeMode.cs" Line="52" Column="30" />
-      <File FileName="DarkHavoc/Screens/TitleScreen.cs" Line="149" Column="14" />
-      <File FileName="DarkHavoc/Program.cs" Line="43" Column="30" />
+      <File FileName="DarkHavoc/DarkHavocGame.cs" Line="1" Column="1" />
+      <File FileName="DarkHavoc/Entities/Player.cs" Line="57" Column="90" />
+      <File FileName="DarkHavoc/Screens/MenuBackgroundScreen.cs" Line="1" Column="1" />
+      <File FileName="AssetLoader/Assets.cs" Line="1" Column="1" />
+      <File FileName="DarkHavoc/Screens/AssetLoadScreen.cs" Line="1" Column="1" />
+      <File FileName="DarkHavoc/Screens/OptionsMenuScreen.cs" Line="1" Column="1" />
+      <File FileName="DarkHavoc/Game/PracticeMode.cs" Line="1" Column="1" />
+      <File FileName="DarkHavoc/Program.cs" Line="1" Column="1" />
+      <File FileName="DarkHavoc.Engine/JoshoEntity.cs" Line="1" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State expanded="True">
-          <Node name="AssetLoader" expanded="True">
-            <Node name="References" expanded="True" />
-          </Node>
-          <Node name="DarkHavoc" expanded="True">
-            <Node name="DataLoaders" expanded="True" />
-            <Node name="Entities" expanded="True" />
-            <Node name="Game" expanded="True" />
-            <Node name="Screens" expanded="True">
-              <Node name="TitleScreen.cs" selected="True" />
-            </Node>
-          </Node>
-          <Node name="DarkHavoc.Engine" expanded="True">
-            <Node name="API" expanded="True" />
-            <Node name="DataReaders" expanded="True" />
-            <Node name="Effects" expanded="True">
-              <Node name="Snowfall" expanded="True" />
-              <Node name="Starfield" expanded="True" />
-            </Node>
-            <Node name="Menu" expanded="True" />
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
