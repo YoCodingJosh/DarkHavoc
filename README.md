@@ -1,4 +1,4 @@
-![alt text](http://phobos.joshuakennedy.net/static/NewDarkHavocLogo.png "Dark Havoc Logo")
+![Dark Havoc logo](https://raw.githubusercontent.com/CaptainSandman/DarkHavoc/master/Dark%20Havoc/Resources/Images/DarkHavocLogo.png)
 
 Dark Havoc
 =========
